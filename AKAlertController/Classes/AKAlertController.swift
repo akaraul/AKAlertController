@@ -44,9 +44,13 @@ public struct AKAlertControllerAppearance {
         .cancel: UIColor.clear,
         .destructive: UIColor.clear
     ]
+    
+    public static func defaultAppearance() -> AKAlertControllerAppearance {
+        return AKAlertControllerAppearance()
+    }
 }
 
-final class AKAlertController: UIViewController {
+open class AKAlertController: UIViewController {
     
     fileprivate var alertViewWidth: CGFloat = 270.0
     
@@ -69,7 +73,7 @@ final class AKAlertController: UIViewController {
     
     public convenience init(title: String?, message: String?,
                             preferredStyle: AKAlertControllerStyle,
-                            appearance: AKAlertControllerAppearance = AKAlertControllerAppearance()) {
+                            appearance: AKAlertControllerAppearance = AKAlertControllerAppearance.defaultAppearance()) {
         self.init()
         
         self.preferredStyle = preferredStyle
@@ -83,13 +87,13 @@ final class AKAlertController: UIViewController {
     
     // MARK: - Lifecycle
     
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         layout()
         setupApperance()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override open func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         if !isAlert {
             let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleContainerViewTapGesture))
@@ -181,11 +185,11 @@ final class AKAlertController: UIViewController {
 
 extension AKAlertController: UIViewControllerTransitioningDelegate {
     
-    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    public func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return AKAlertAnimator(isPresenting: true)
     }
     
-    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    public func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return AKAlertAnimator(isPresenting: false)
     }
     
