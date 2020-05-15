@@ -48,7 +48,7 @@ open class AKAlertAnimator: NSObject, UIViewControllerAnimatedTransitioning {
             if alertController.isAlert {
                 alertController.containerView.transform = CGAffineTransform(scaleX: 1.05, y: 1.05)
             } else {
-                alertController.containerView.transform = CGAffineTransform(translationX: 0, y: -10)
+                alertController.containerView.transform = CGAffineTransform(translationX: 0, y: 0)
             }
         }, completion: { _ in
             UIView.animate(withDuration: 0.2, animations: {

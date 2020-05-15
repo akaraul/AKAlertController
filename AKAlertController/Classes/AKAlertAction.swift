@@ -10,9 +10,9 @@ import UIKit
 import Foundation
 
 public enum AKAlertActionStyle: Int {
+    case destructive
     case `default`
     case cancel
-    case destructive
 }
 
 open class AKAlertAction {
