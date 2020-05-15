@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AKAlertController_Example' do
+  pod 'AKAlertController', :path => '../'
+
+  target 'AKAlertController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
