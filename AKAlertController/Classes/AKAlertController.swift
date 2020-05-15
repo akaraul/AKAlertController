@@ -18,17 +18,17 @@ public struct AKAlertControllerAppearance {
     let overlayColor = UIColor.black.withAlphaComponent(0.5)
     let alertBgColor = UIColor.white
     let alertCornerRadius: CGFloat = 10
-    let textMargins: CGFloat = 15
+    let textMargins: UIEdgeInsets = .uniform(15)
     let titleBottomOffset: CGFloat = 5
     
     let titleFont = UIFont.systemFont(ofSize: 17, weight: .semibold)
     let titleTextColor = UIColor.black
     let messageFont = UIFont.systemFont(ofSize: 13)
     let messageTextColor = UIColor.black
+    let textContainerBgColor = UIColor.white
     
     let alertButtonsHeight: CGFloat = 44
     let actionSheetButtonsHeight: CGFloat = 56
-    let buttonsTopMargin: CGFloat = 10
     let buttonsBordersWidth: CGFloat = 1
     let buttonsBordersColor: UIColor = UIColor.lightGray.withAlphaComponent(0.5)
     
@@ -59,11 +59,12 @@ open class AKAlertController: UIViewController {
     
     let overlayView = UIView()
     let containerView = UIView()
-    private let titleLabel = UILabel()
-    private let messageLabel = UILabel()
+    private let containerStackView = UIStackView()
     
     private let textScrollableContainer = UIScrollView()
     private let textStackView = UIStackView()
+    private let titleLabel = UILabel()
+    private let messageLabel = UILabel()
     
     private let buttonsContainerView = UIView()
     private let buttonsStackView = UIStackView()
@@ -99,9 +100,10 @@ open class AKAlertController: UIViewController {
     
     override open func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        guard isAlert == false else { return }
+        guard isAlert == false, actions.contains(where: { $0.style == .cancel }) else { return }
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleOverlayViewTapGesture))
         overlayView.addGestureRecognizer(tapGesture)
+//        buttonsContainerView.roundCorners([.bottomLeft, .bottomRight], radius: appearance.alertCornerRadius)
     }
     
     // MARK: - Private helpers
@@ -110,6 +112,7 @@ open class AKAlertController: UIViewController {
         buttonsStackView.axis = (!isAlert || actions.count > 2) ? .vertical : .horizontal
         buttonsStackView.distribution = .fillEqually
         textStackView.axis = .vertical
+        containerStackView.axis = .vertical
         textStackView.spacing = hasText ? appearance.titleBottomOffset : 0
         
         [titleLabel, messageLabel].forEach { (label) in
@@ -123,19 +126,27 @@ open class AKAlertController: UIViewController {
         
         overlayView.backgroundColor = appearance.overlayColor
         containerView.layer.cornerRadius = appearance.alertCornerRadius
-        containerView.backgroundColor = appearance.alertBgColor
+        containerView.backgroundColor = .clear
         containerView.clipsToBounds = true
+        
+        textStackView.isLayoutMarginsRelativeArrangement = hasText
+        textStackView.layoutMargins = appearance.textMargins
         
         buttonsContainerView.backgroundColor = appearance.buttonsBordersColor
         buttonsStackView.isLayoutMarginsRelativeArrangement = hasText
         buttonsStackView.layoutMargins = .top(appearance.buttonsBordersWidth)
         buttonsStackView.spacing = appearance.buttonsBordersWidth
+        
+        textScrollableContainer.backgroundColor = appearance.textContainerBgColor
     }
     
     private func layout() {
         [overlayView, containerView].forEach({ view.addSubview($0) })
         overlayView.edgesToSuperview()
         containerView.heightToSuperview(multiplier: 0.95, relation: .equalOrLess, usingSafeArea: true)
+        containerView.addSubview(containerStackView)
+        containerStackView.edgesToSuperview()
+        
         if isAlert {
             containerView.width(alertViewWidth)
             containerView.centerInSuperview()
@@ -145,19 +156,16 @@ open class AKAlertController: UIViewController {
             containerView.bottomToSuperview(usingSafeArea: true)
         }
         
-        [textScrollableContainer, buttonsContainerView].forEach({ containerView.addSubview($0) })
-        textScrollableContainer.edgesToSuperview(excluding: .bottom, insets: hasText ? .uniform(appearance.textMargins) : .zero)
-        buttonsContainerView.edgesToSuperview(excluding: .top)
-        buttonsContainerView.topToBottom(of: textScrollableContainer, offset: hasText ? appearance.buttonsTopMargin : 0)
-        
+        containerStackView.addArrangedSubview(textScrollableContainer)
         textScrollableContainer.addSubview(textStackView)
         textStackView.widthToSuperview()
         textStackView.heightToSuperview(priority: .defaultLow)
         textStackView.widthToSuperview()
         
+        containerStackView.addArrangedSubview(buttonsContainerView)
         buttonsContainerView.addSubview(buttonsStackView)
-        [textStackView, buttonsStackView].forEach({ $0.edgesToSuperview() })
         
+        [textStackView, buttonsStackView].forEach({ $0.edgesToSuperview() })
         [titleLabel, messageLabel].forEach({ textStackView.addArrangedSubview($0) })
         
         layouActionsButtons()
@@ -174,7 +182,13 @@ open class AKAlertController: UIViewController {
             button.setTitleColor(action.textColor ?? appearance.buttonTextColor[action.style], for: .normal)
             button.backgroundColor = action.bgColor ?? appearance.buttonBgColor[action.style]
             button.height(isAlert ? appearance.alertButtonsHeight : appearance.actionSheetButtonsHeight)
-            buttonsStackView.addArrangedSubview(button)
+            if !isAlert && action.style == .cancel {
+                button.backgroundColor = .red
+                button.layer.cornerRadius = appearance.alertCornerRadius
+                containerStackView.addArrangedSubview(button, withMargin: .top(10))
+            } else {
+                buttonsStackView.addArrangedSubview(button)
+            }
         }
     }
     

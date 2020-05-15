@@ -22,6 +22,7 @@
 		421CB5E0AFD40806F4281DCE2EDD578E /* Abstraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2BF895255A9365BC69CAD063F1C0B4 /* Abstraction.swift */; };
 		516D6FAF468C28F4DDB88964603BB71F /* Pods-AKAlertController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E4BB3F55A4DFFDAE4584ACCE9A99C0 /* Pods-AKAlertController_Example-dummy.m */; };
 		59AD4655B2CD4EA5C363DDB5A6275310 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CF0EFA80D02F8C35745900DA3F45FF /* Stack.swift */; };
+		6968DAB1246EEEB700F52F14 /* AKExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6968DAB0246EEEB700F52F14 /* AKExtensions.swift */; };
 		AAD2972BDB44AB211C8AA29A6611990B /* Constrainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A2DF43C3E5A1D1E9A559D9F154D5D4 /* Constrainable.swift */; };
 		BDE8B3E1C55B268FD20E445889FF3AD3 /* AKAlertController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D778E0E5EDACAFB27337AFF0A87FC7 /* AKAlertController-dummy.m */; };
 		D1D5C3ADCA8950AE1818D0BD67690686 /* TinyEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78051CAF65CCFDC2B674F3ABC68C4607 /* TinyEdgeInsets.swift */; };
@@ -70,6 +71,7 @@
 		4B1ABF1BEB9F76542E9531C8E6F39940 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4BBDC5D75AC7752377AC8A545835987F /* AKAlertController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AKAlertController-umbrella.h"; sourceTree = "<group>"; };
 		53090B7B9F2DA5A542B6E0B2472A6E8A /* TinyConstraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TinyConstraints.swift; path = TinyConstraints/Classes/TinyConstraints.swift; sourceTree = "<group>"; };
+		6968DAB0246EEEB700F52F14 /* AKExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKExtensions.swift; sourceTree = "<group>"; };
 		6A8563F68FDB7CCF7C0AC81C8A89E957 /* Pods-AKAlertController_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AKAlertController_Example-Info.plist"; sourceTree = "<group>"; };
 		6DAC31B774EA89526F6407D5653169A1 /* Pods_AKAlertController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AKAlertController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78051CAF65CCFDC2B674F3ABC68C4607 /* TinyEdgeInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TinyEdgeInsets.swift; path = TinyConstraints/Classes/TinyEdgeInsets.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				0B56103907A7D891EC5736AFAA1D3341 /* AKAlertAction.swift */,
 				9A60A995F864745115C92ED47460A480 /* AKAlertAnimator.swift */,
 				8CDF5F7226F3C785F09E4E77738E4251 /* AKAlertController.swift */,
+				6968DAB0246EEEB700F52F14 /* AKExtensions.swift */,
 				76F60EB671D435D9C3902174F46E650D /* Pod */,
 				62F81DCACAABE7BAF4A7CD1E0091A824 /* Support Files */,
 			);
@@ -442,6 +445,7 @@
 				3A28695FE0CD1D579E88A755C31FBF00 /* AKAlertAction.swift in Sources */,
 				0087F1FEFFFF5B72F78971BB0196E1D7 /* AKAlertAnimator.swift in Sources */,
 				BDE8B3E1C55B268FD20E445889FF3AD3 /* AKAlertController-dummy.m in Sources */,
+				6968DAB1246EEEB700F52F14 /* AKExtensions.swift in Sources */,
 				05918BF15CDF469D86E3045F74FC8537 /* AKAlertController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

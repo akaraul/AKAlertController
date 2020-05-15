@@ -18,7 +18,7 @@ open class AKAlertAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     }
     
     open func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return isPresenting ? 0.45 : 0.25
+        return isPresenting ? 0.45 : 0.3
     }
     
     open func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
@@ -32,6 +32,7 @@ open class AKAlertAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     func presentAnimateTransition(_ transitionContext: UIViewControllerContextTransitioning) {
         let alertController = transitionContext.viewController(forKey: .to) as! AKAlertController
         let containerView = transitionContext.containerView
+        let duration = transitionDuration(using: transitionContext) / 2
         
         alertController.overlayView.alpha = 0.0
         alertController.containerView.alpha = 0.0
@@ -42,7 +43,7 @@ open class AKAlertAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         }
         containerView.addSubview(alertController.view)
         
-        UIView.animate(withDuration: 0.25, animations: {
+        UIView.animate(withDuration: duration, animations: {
             alertController.overlayView.alpha = 1.0
             alertController.containerView.alpha = 1.0
             if alertController.isAlert {
@@ -51,7 +52,7 @@ open class AKAlertAnimator: NSObject, UIViewControllerAnimatedTransitioning {
                 alertController.containerView.transform = CGAffineTransform(translationX: 0, y: 0)
             }
         }, completion: { _ in
-            UIView.animate(withDuration: 0.2, animations: {
+            UIView.animate(withDuration: duration, animations: {
                 alertController.containerView.transform = .identity
             }, completion: { finished in
                 transitionContext.completeTransition(finished)
@@ -67,7 +68,7 @@ open class AKAlertAnimator: NSObject, UIViewControllerAnimatedTransitioning {
                 alertController.containerView.alpha = 0.0
                 alertController.containerView.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
             } else {
-                alertController.containerView.transform = CGAffineTransform(translationX: 0, y: alertController.containerView.frame.height)
+                alertController.containerView.transform = CGAffineTransform(translationX: 0, y: alertController.view.frame.height)
             }
         }, completion: { finished in
             transitionContext.completeTransition(finished)

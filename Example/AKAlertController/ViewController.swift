@@ -27,8 +27,8 @@ class ViewController: UIViewController {
     
     @IBAction func showActionSheet(_ sender: Any) {
         let actionSheet = AKAlertController(title: "title", message: "message", preferredStyle: .actionSheet)
-//        actionSheet.addAction(AKAlertAction(title: "Destructive1", style: .destructive, handler: { _ in }))
-//        actionSheet.addAction(AKAlertAction(title: "Default", style: .default, handler: { _ in }))
+        actionSheet.addAction(AKAlertAction(title: "Destructive1", style: .destructive, handler: { _ in }))
+        actionSheet.addAction(AKAlertAction(title: "Default", style: .default, handler: { _ in }))
         actionSheet.addAction(AKAlertAction(title: "Cancel", style: .cancel, handler: { _ in }))
         actionSheet.addAction(AKAlertAction(title: "Destructive", style: .destructive, handler: { _ in }))
         present(actionSheet, animated: true, completion: nil)
@@ -60,7 +60,7 @@ class ViewController: UIViewController {
 //        alertController.addAction(AKAlertAction(title: "TEST2", style: .destructive, handler: { _ in }))
 //        present(alertController, animated: true, completion: nil)
         
-        let alert = UIAlertController(title: "title", message: "message", preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { _ in }))
         alert.addAction(UIAlertAction(title: "Destructive1", style: .destructive, handler: { _ in }))
         alert.addAction(UIAlertAction(title: "Destructive", style: .destructive, handler: { _ in }))
