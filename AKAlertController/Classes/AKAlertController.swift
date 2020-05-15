@@ -103,7 +103,6 @@ open class AKAlertController: UIViewController {
         guard isAlert == false, actions.contains(where: { $0.style == .cancel }) else { return }
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleOverlayViewTapGesture))
         overlayView.addGestureRecognizer(tapGesture)
-//        buttonsContainerView.roundCorners([.bottomLeft, .bottomRight], radius: appearance.alertCornerRadius)
     }
     
     // MARK: - Private helpers
@@ -178,6 +177,7 @@ open class AKAlertController: UIViewController {
             button.tag = index
             button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
             button.setTitle(action.title, for: .normal)
+            button.setImage(action.icon, for: .normal)
             button.titleLabel?.font = action.font ?? appearance.buttonFont[action.style]
             button.setTitleColor(action.textColor ?? appearance.buttonTextColor[action.style], for: .normal)
             button.backgroundColor = action.bgColor ?? appearance.buttonBgColor[action.style]

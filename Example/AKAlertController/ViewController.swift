@@ -51,21 +51,24 @@ class ViewController: UIViewController {
     
     
     @IBAction func showAlertWithCustomAppearance(_ sender: Any) {
-//        let appearance = AKAlertControllerAppearance.defaultAppearance()
-//        let alertController = AKAlertController(title: "title", message: "message", preferredStyle: .alert, appearance: appearance)
-//        let customAction = AKAlertAction(title: "Custom action", style: .default, handler: { _ in })
-//        customAction.textColor = .orange
-//        customAction.bgColor = .blue
-//        alertController.addAction(customAction)
-//        alertController.addAction(AKAlertAction(title: "TEST2", style: .destructive, handler: { _ in }))
-//        present(alertController, animated: true, completion: nil)
+        let appearance = AKAlertControllerAppearance.defaultAppearance()
+        let alertController = AKAlertController(title: "title", message: "message", preferredStyle: .alert, appearance: appearance)
+        let customAction = AKAlertAction(title: "Custom action", style: .default, handler: { _ in })
+        customAction.textColor = .magenta
+        customAction.bgColor = .blue
+        if #available(iOS 13.0, *) {
+            customAction.icon = UIImage(systemName: "square.and.arrow.down")
+        } 
+        alertController.addAction(customAction)
+        alertController.addAction(AKAlertAction(title: "TEST2", style: .destructive, handler: { _ in }))
+        present(alertController, animated: true, completion: nil)
         
-        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { _ in }))
-        alert.addAction(UIAlertAction(title: "Destructive1", style: .destructive, handler: { _ in }))
-        alert.addAction(UIAlertAction(title: "Destructive", style: .destructive, handler: { _ in }))
-        alert.addAction(UIAlertAction(title: "Default", style: .default, handler: { _ in }))
-        present(alert, animated: true, completion: nil)
+//        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+//        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { _ in }))
+//        alert.addAction(UIAlertAction(title: "Destructive1", style: .destructive, handler: { _ in }))
+//        alert.addAction(UIAlertAction(title: "Destructive", style: .destructive, handler: { _ in }))
+//        alert.addAction(UIAlertAction(title: "Default", style: .default, handler: { _ in }))
+//        present(alert, animated: true, completion: nil)
     }
 
 }

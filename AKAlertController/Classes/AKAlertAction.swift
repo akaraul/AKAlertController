@@ -21,6 +21,7 @@ open class AKAlertAction {
     open var bgColor: UIColor?
     open var textColor: UIColor?
     open var font: UIFont?
+    open var icon: UIImage?
     var handler: ((AKAlertAction) -> Void)?
     
     required public init(title: String, style: AKAlertActionStyle, handler: ((AKAlertAction) -> Void)?) {
