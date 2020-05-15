@@ -10,8 +10,8 @@ import Foundation
 import TinyConstraints
 
 public enum AKAlertControllerStyle: Int {
-    case actionSheet
     case alert
+    case actionSheet
 }
 
 public struct AKAlertControllerAppearance {
@@ -19,25 +19,25 @@ public struct AKAlertControllerAppearance {
     let alertBgColor = UIColor.white
     let alertCornerRadius: CGFloat = 10
     let textMargins: CGFloat = 15
-    let titleBottomOffset: CGFloat = 8
+    let titleBottomOffset: CGFloat = 5
     
-    let titleFont = UIFont.systemFont(ofSize: 18, weight: .bold)
+    let titleFont = UIFont.systemFont(ofSize: 17, weight: .semibold)
     let titleTextColor = UIColor.black
-    let messageFont = UIFont.systemFont(ofSize: 14)
+    let messageFont = UIFont.systemFont(ofSize: 13)
     let messageTextColor = UIColor.black
     
     let buttonsHeight: CGFloat = 44
     let buttonsTopMargin: CGFloat = 10
     
     let buttonFont: [AKAlertActionStyle: UIFont] = [
-        .default: UIFont.systemFont(ofSize: 16),
-        .cancel: UIFont.systemFont(ofSize: 16),
-        .destructive: UIFont.systemFont(ofSize: 16)
+        .default: UIFont.systemFont(ofSize: 17),
+        .cancel: UIFont.systemFont(ofSize: 17, weight: .semibold),
+        .destructive: UIFont.systemFont(ofSize: 17)
     ]
     let buttonTextColor: [AKAlertActionStyle: UIColor] = [
-        .default: UIColor.blue,
-        .cancel: UIColor.blue,
-        .destructive: UIColor.red
+        .default: UIColor.systemBlue,
+        .cancel: UIColor.systemBlue,
+        .destructive: UIColor.systemRed
     ]
     let buttonBgColor: [AKAlertActionStyle : UIColor] = [
         .default: UIColor.clear,
