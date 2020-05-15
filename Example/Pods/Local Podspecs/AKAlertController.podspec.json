@@ -1,0 +1,22 @@
+{
+  "name": "AKAlertController",
+  "version": "0.1.0",
+  "summary": "A short description of AKAlertController.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/akaraul/AKAlertController",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "akaraul": "aka@aiweapps.com"
+  },
+  "source": {
+    "git": "https://github.com/akaraul/AKAlertController.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AKAlertController/Classes/**/*"
+}

@@ -1,0 +1,16 @@
+PODS:
+  - AKAlertController (0.1.0)
+
+DEPENDENCIES:
+  - AKAlertController (from `../`)
+
+EXTERNAL SOURCES:
+  AKAlertController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AKAlertController: b7c6fbcebd65f650b6e1c9ac318922e9e32f0bcd
+
+PODFILE CHECKSUM: 093c312b6e7ca2b86158767979edacce5431a683
+
+COCOAPODS: 1.9.1

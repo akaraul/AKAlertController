@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28E3C3FED722F02506D4AF337B5888DD /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C6BD99840124D0DEF4A147374E2C35 /* ReplaceMe.swift */; };
+		628A39B09DB249EC8BFDC0BD8F5D534D /* Pods-AKAlertController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB935E27C36D1C5AF7DA2BF077ECB16 /* Pods-AKAlertController_Example-dummy.m */; };
+		657465CF2F5B1A4626BF3FCB5B6874DE /* AKAlertController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 38D436864C8CDF1DAC3658EBAADBFB8B /* AKAlertController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8340A51F5043351B2BC1AF387D948873 /* Pods-AKAlertController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 578C143A926603ECD6A6A1A88955B47C /* Pods-AKAlertController_Tests-dummy.m */; };
+		847160D118DAEB7296EBC05190BEDBD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		93478BD20D3C2FE3074C0E21F51ABF6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		D965C85F8939CB0A41D31458EBDE3B05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		E84F495ABC70DF1918D39ABF7809F8DD /* AKAlertController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A760641041A84C0213884367C51CAA /* AKAlertController-dummy.m */; };
+		F6A5322B3A7439D3C88F512298030B95 /* Pods-AKAlertController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67DCCF8BB8FC3D68FEC167A8DBFC8D53 /* Pods-AKAlertController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8427CBAF4D90B24A373CE67F1D2AB57 /* Pods-AKAlertController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 486B51499CF87EB2B1612DA862B1E208 /* Pods-AKAlertController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11C3EB0E736266A2FB84F6532C85C1E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06C268F26105860323396377F9CCFEF8;
+			remoteInfo = "Pods-AKAlertController_Example";
+		};
+		A6491937A5E57E9E08A9ACACA9D2D2D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3639CAAB78DC77101233E3CBAE0AEEA;
+			remoteInfo = AKAlertController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CF6B3A997FD33473DD6CE403D068032 /* Pods-AKAlertController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AKAlertController_Tests.modulemap"; sourceTree = "<group>"; };
+		0D04928EE4BA1A1076B6ADF8F04A171B /* Pods-AKAlertController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AKAlertController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		107CC0CC12390A906609B5E1137F92AA /* Pods-AKAlertController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AKAlertController_Example.modulemap"; sourceTree = "<group>"; };
+		21B72287487DFA7F1DED8B1903161218 /* AKAlertController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AKAlertController-prefix.pch"; sourceTree = "<group>"; };
+		318110C05E902D0BA446A015E42A1B15 /* Pods-AKAlertController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AKAlertController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		38400CBADB7C52A557CA6781AE3AAC34 /* Pods-AKAlertController_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AKAlertController_Example-Info.plist"; sourceTree = "<group>"; };
+		38D436864C8CDF1DAC3658EBAADBFB8B /* AKAlertController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AKAlertController-umbrella.h"; sourceTree = "<group>"; };
+		39C906DD7D0F3716523936936825A7F0 /* Pods-AKAlertController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AKAlertController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		486B51499CF87EB2B1612DA862B1E208 /* Pods-AKAlertController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AKAlertController_Tests-umbrella.h"; sourceTree = "<group>"; };
+		4E16420AED71B8D7E98F2DBC385E8942 /* Pods_AKAlertController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AKAlertController_Tests.framework; path = "Pods-AKAlertController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50D039C54FC3C6CD5831DB37E22F89F0 /* AKAlertController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AKAlertController.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		53E58BB5D99CD58E287E914D6A2DB57A /* Pods-AKAlertController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AKAlertController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		551EE2B32B660EF4087E92CCA9FB4FDA /* AKAlertController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AKAlertController.release.xcconfig; sourceTree = "<group>"; };
+		56B677BDDDF7EBB4FCB05952499560FE /* AKAlertController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AKAlertController.debug.xcconfig; sourceTree = "<group>"; };
+		578C143A926603ECD6A6A1A88955B47C /* Pods-AKAlertController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AKAlertController_Tests-dummy.m"; sourceTree = "<group>"; };
+		63A760641041A84C0213884367C51CAA /* AKAlertController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AKAlertController-dummy.m"; sourceTree = "<group>"; };
+		67DCCF8BB8FC3D68FEC167A8DBFC8D53 /* Pods-AKAlertController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AKAlertController_Example-umbrella.h"; sourceTree = "<group>"; };
+		6DAC31B774EA89526F6407D5653169A1 /* Pods_AKAlertController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AKAlertController_Example.framework; path = "Pods-AKAlertController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EB935E27C36D1C5AF7DA2BF077ECB16 /* Pods-AKAlertController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AKAlertController_Example-dummy.m"; sourceTree = "<group>"; };
+		80F029B83409B223330490700B0E077C /* AKAlertController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AKAlertController.modulemap; sourceTree = "<group>"; };
+		854152B921C74CF788C8D635A4EA8B0F /* Pods-AKAlertController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AKAlertController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		88EB6F8C16BE5BE69C78DC5F4A5F3C26 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		912276BE66C4F5431C51244899A7B04E /* Pods-AKAlertController_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AKAlertController_Tests-Info.plist"; sourceTree = "<group>"; };
+		95EDBA2205D3500F23ABFF59EC55C3F8 /* Pods-AKAlertController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AKAlertController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		9ABC92D8F371F1B070F720A118A458F1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		9D3E782A088A06B7684B74D5E03493E6 /* Pods-AKAlertController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AKAlertController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2DE586F3366E08A600201E7CA2E4646 /* AKAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AKAlertController.framework; path = AKAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAC8B84BAE644693966BEEEBDC6F3640 /* Pods-AKAlertController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AKAlertController_Example-frameworks.sh"; sourceTree = "<group>"; };
+		C2C6BD99840124D0DEF4A147374E2C35 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = AKAlertController/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		D4461840F1991C0CDEF19248F4248279 /* AKAlertController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AKAlertController-Info.plist"; sourceTree = "<group>"; };
+		E2DF24ECB77254A6E4B74D972F69E1FE /* Pods-AKAlertController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AKAlertController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19B311C29D1085A8A4C56011462165D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847160D118DAEB7296EBC05190BEDBD3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E3C48EE4C26494489F5238896A36E2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93478BD20D3C2FE3074C0E21F51ABF6B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF49D297165FE4900B06B3CF3E56D9E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D965C85F8939CB0A41D31458EBDE3B05 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C12E9543D25AF80044BC45B5952E941 /* Pods-AKAlertController_Example */ = {
+			isa = PBXGroup;
+			children = (
+				107CC0CC12390A906609B5E1137F92AA /* Pods-AKAlertController_Example.modulemap */,
+				854152B921C74CF788C8D635A4EA8B0F /* Pods-AKAlertController_Example-acknowledgements.markdown */,
+				95EDBA2205D3500F23ABFF59EC55C3F8 /* Pods-AKAlertController_Example-acknowledgements.plist */,
+				6EB935E27C36D1C5AF7DA2BF077ECB16 /* Pods-AKAlertController_Example-dummy.m */,
+				BAC8B84BAE644693966BEEEBDC6F3640 /* Pods-AKAlertController_Example-frameworks.sh */,
+				38400CBADB7C52A557CA6781AE3AAC34 /* Pods-AKAlertController_Example-Info.plist */,
+				67DCCF8BB8FC3D68FEC167A8DBFC8D53 /* Pods-AKAlertController_Example-umbrella.h */,
+				0D04928EE4BA1A1076B6ADF8F04A171B /* Pods-AKAlertController_Example.debug.xcconfig */,
+				318110C05E902D0BA446A015E42A1B15 /* Pods-AKAlertController_Example.release.xcconfig */,
+			);
+			name = "Pods-AKAlertController_Example";
+			path = "Target Support Files/Pods-AKAlertController_Example";
+			sourceTree = "<group>";
+		};
+		2139DE3DBBEB657EA221B1A8DBEBA1C9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				50D039C54FC3C6CD5831DB37E22F89F0 /* AKAlertController.podspec */,
+				9ABC92D8F371F1B070F720A118A458F1 /* LICENSE */,
+				88EB6F8C16BE5BE69C78DC5F4A5F3C26 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		311F9A26AAE6D1379FD4A69DA3067F7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2DE586F3366E08A600201E7CA2E4646 /* AKAlertController.framework */,
+				6DAC31B774EA89526F6407D5653169A1 /* Pods_AKAlertController_Example.framework */,
+				4E16420AED71B8D7E98F2DBC385E8942 /* Pods_AKAlertController_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32F62730ACFE0082DC52F1B935B1084F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A037B258AB24BDFB528C6C805C4A3817 /* AKAlertController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		696AEA6AA81F5D7EAC172F3147E26C8C /* Pods-AKAlertController_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0CF6B3A997FD33473DD6CE403D068032 /* Pods-AKAlertController_Tests.modulemap */,
+				39C906DD7D0F3716523936936825A7F0 /* Pods-AKAlertController_Tests-acknowledgements.markdown */,
+				53E58BB5D99CD58E287E914D6A2DB57A /* Pods-AKAlertController_Tests-acknowledgements.plist */,
+				578C143A926603ECD6A6A1A88955B47C /* Pods-AKAlertController_Tests-dummy.m */,
+				912276BE66C4F5431C51244899A7B04E /* Pods-AKAlertController_Tests-Info.plist */,
+				486B51499CF87EB2B1612DA862B1E208 /* Pods-AKAlertController_Tests-umbrella.h */,
+				E2DF24ECB77254A6E4B74D972F69E1FE /* Pods-AKAlertController_Tests.debug.xcconfig */,
+				9D3E782A088A06B7684B74D5E03493E6 /* Pods-AKAlertController_Tests.release.xcconfig */,
+			);
+			name = "Pods-AKAlertController_Tests";
+			path = "Target Support Files/Pods-AKAlertController_Tests";
+			sourceTree = "<group>";
+		};
+		A037B258AB24BDFB528C6C805C4A3817 /* AKAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				C2C6BD99840124D0DEF4A147374E2C35 /* ReplaceMe.swift */,
+				2139DE3DBBEB657EA221B1A8DBEBA1C9 /* Pod */,
+				DB89AE57AD5BC4B1E4C23371F6532B65 /* Support Files */,
+			);
+			name = AKAlertController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				32F62730ACFE0082DC52F1B935B1084F /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				311F9A26AAE6D1379FD4A69DA3067F7C /* Products */,
+				FA202BB7DCB4E8FD07CE3C5CA811DA75 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB89AE57AD5BC4B1E4C23371F6532B65 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				80F029B83409B223330490700B0E077C /* AKAlertController.modulemap */,
+				63A760641041A84C0213884367C51CAA /* AKAlertController-dummy.m */,
+				D4461840F1991C0CDEF19248F4248279 /* AKAlertController-Info.plist */,
+				21B72287487DFA7F1DED8B1903161218 /* AKAlertController-prefix.pch */,
+				38D436864C8CDF1DAC3658EBAADBFB8B /* AKAlertController-umbrella.h */,
+				56B677BDDDF7EBB4FCB05952499560FE /* AKAlertController.debug.xcconfig */,
+				551EE2B32B660EF4087E92CCA9FB4FDA /* AKAlertController.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AKAlertController";
+			sourceTree = "<group>";
+		};
+		FA202BB7DCB4E8FD07CE3C5CA811DA75 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C12E9543D25AF80044BC45B5952E941 /* Pods-AKAlertController_Example */,
+				696AEA6AA81F5D7EAC172F3147E26C8C /* Pods-AKAlertController_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		20E8FD34B41E92298216F48B901EE7A2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				657465CF2F5B1A4626BF3FCB5B6874DE /* AKAlertController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50F1EE3FC936B2E1BBC0583BE5E097AF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8427CBAF4D90B24A373CE67F1D2AB57 /* Pods-AKAlertController_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDE3BB40F9481D5D23CA532D0473CE21 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A5322B3A7439D3C88F512298030B95 /* Pods-AKAlertController_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		06C268F26105860323396377F9CCFEF8 /* Pods-AKAlertController_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8832B35CBAA33FEFE76282315762DD08 /* Build configuration list for PBXNativeTarget "Pods-AKAlertController_Example" */;
+			buildPhases = (
+				EDE3BB40F9481D5D23CA532D0473CE21 /* Headers */,
+				41A42A04B48F978541F2E1C77407214D /* Sources */,
+				FF49D297165FE4900B06B3CF3E56D9E3 /* Frameworks */,
+				09FD01082B29F122A3AEF40BEE56B1BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38AA100000A04998CAE42DF72356E658 /* PBXTargetDependency */,
+			);
+			name = "Pods-AKAlertController_Example";
+			productName = "Pods-AKAlertController_Example";
+			productReference = 6DAC31B774EA89526F6407D5653169A1 /* Pods_AKAlertController_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		172AFC9E2226D105D36AC36A8962EA03 /* Pods-AKAlertController_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB852CD8ADD88BFDFF1958B58D35CF00 /* Build configuration list for PBXNativeTarget "Pods-AKAlertController_Tests" */;
+			buildPhases = (
+				50F1EE3FC936B2E1BBC0583BE5E097AF /* Headers */,
+				95A925B79F286C05FF118FB735D51714 /* Sources */,
+				19B311C29D1085A8A4C56011462165D9 /* Frameworks */,
+				98D2A7B72A8DB007CA969C429FED90BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				903C55F2905E6411006D6809096BCE52 /* PBXTargetDependency */,
+			);
+			name = "Pods-AKAlertController_Tests";
+			productName = "Pods-AKAlertController_Tests";
+			productReference = 4E16420AED71B8D7E98F2DBC385E8942 /* Pods_AKAlertController_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A3639CAAB78DC77101233E3CBAE0AEEA /* AKAlertController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F19A53FBD2CF45A0F9EF8883A32E7956 /* Build configuration list for PBXNativeTarget "AKAlertController" */;
+			buildPhases = (
+				20E8FD34B41E92298216F48B901EE7A2 /* Headers */,
+				71D18DA5C866CF70058B343DA049C61B /* Sources */,
+				7E3C48EE4C26494489F5238896A36E2A /* Frameworks */,
+				425D15D415AD40315FB7343EBDED173D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AKAlertController;
+			productName = AKAlertController;
+			productReference = A2DE586F3366E08A600201E7CA2E4646 /* AKAlertController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 311F9A26AAE6D1379FD4A69DA3067F7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3639CAAB78DC77101233E3CBAE0AEEA /* AKAlertController */,
+				06C268F26105860323396377F9CCFEF8 /* Pods-AKAlertController_Example */,
+				172AFC9E2226D105D36AC36A8962EA03 /* Pods-AKAlertController_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09FD01082B29F122A3AEF40BEE56B1BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		425D15D415AD40315FB7343EBDED173D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D2A7B72A8DB007CA969C429FED90BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41A42A04B48F978541F2E1C77407214D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				628A39B09DB249EC8BFDC0BD8F5D534D /* Pods-AKAlertController_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D18DA5C866CF70058B343DA049C61B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E84F495ABC70DF1918D39ABF7809F8DD /* AKAlertController-dummy.m in Sources */,
+				28E3C3FED722F02506D4AF337B5888DD /* ReplaceMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95A925B79F286C05FF118FB735D51714 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8340A51F5043351B2BC1AF387D948873 /* Pods-AKAlertController_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38AA100000A04998CAE42DF72356E658 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AKAlertController;
+			target = A3639CAAB78DC77101233E3CBAE0AEEA /* AKAlertController */;
+			targetProxy = A6491937A5E57E9E08A9ACACA9D2D2D4 /* PBXContainerItemProxy */;
+		};
+		903C55F2905E6411006D6809096BCE52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AKAlertController_Example";
+			target = 06C268F26105860323396377F9CCFEF8 /* Pods-AKAlertController_Example */;
+			targetProxy = 11C3EB0E736266A2FB84F6532C85C1E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06FDBFF63F7C75BC68B0CB0585CFED1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 318110C05E902D0BA446A015E42A1B15 /* Pods-AKAlertController_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AKAlertController_Example/Pods-AKAlertController_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AKAlertController_Example/Pods-AKAlertController_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		168513CC14DF08AE199BB1D51EBB5D9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 551EE2B32B660EF4087E92CCA9FB4FDA /* AKAlertController.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AKAlertController/AKAlertController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AKAlertController/AKAlertController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AKAlertController/AKAlertController.modulemap";
+				PRODUCT_MODULE_NAME = AKAlertController;
+				PRODUCT_NAME = AKAlertController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		42DAB1173DFFE296C7C5C384B8108288 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2DF24ECB77254A6E4B74D972F69E1FE /* Pods-AKAlertController_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AKAlertController_Tests/Pods-AKAlertController_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AKAlertController_Tests/Pods-AKAlertController_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6BF23714EC538DD1C9BF70F28F3AF343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56B677BDDDF7EBB4FCB05952499560FE /* AKAlertController.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AKAlertController/AKAlertController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AKAlertController/AKAlertController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AKAlertController/AKAlertController.modulemap";
+				PRODUCT_MODULE_NAME = AKAlertController;
+				PRODUCT_NAME = AKAlertController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8BA8036D394B042BAE98A702879D86EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D3E782A088A06B7684B74D5E03493E6 /* Pods-AKAlertController_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AKAlertController_Tests/Pods-AKAlertController_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AKAlertController_Tests/Pods-AKAlertController_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B0087CB4594321EF41619F3181FE120E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BB3A3ACF55FB7DC4519915AA5FC4E20F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D04928EE4BA1A1076B6ADF8F04A171B /* Pods-AKAlertController_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AKAlertController_Example/Pods-AKAlertController_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AKAlertController_Example/Pods-AKAlertController_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
+				B0087CB4594321EF41619F3181FE120E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8832B35CBAA33FEFE76282315762DD08 /* Build configuration list for PBXNativeTarget "Pods-AKAlertController_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB3A3ACF55FB7DC4519915AA5FC4E20F /* Debug */,
+				06FDBFF63F7C75BC68B0CB0585CFED1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB852CD8ADD88BFDFF1958B58D35CF00 /* Build configuration list for PBXNativeTarget "Pods-AKAlertController_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42DAB1173DFFE296C7C5C384B8108288 /* Debug */,
+				8BA8036D394B042BAE98A702879D86EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F19A53FBD2CF45A0F9EF8883A32E7956 /* Build configuration list for PBXNativeTarget "AKAlertController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BF23714EC538DD1C9BF70F28F3AF343 /* Debug */,
+				168513CC14DF08AE199BB1D51EBB5D9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

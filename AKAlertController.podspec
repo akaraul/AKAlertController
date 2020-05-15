@@ -8,35 +8,24 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AKAlertController'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of AKAlertController.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.version          = '1.0.0'
+  s.swift_versions   = [5.0]
+  s.summary          = 'Simple fully customizable UIAlertController written in Swift.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+                       Simple fully customizable UIAlertController written in Swift. Added the ability to change colors, fonts, etc.
                        DESC
 
   s.homepage         = 'https://github.com/akaraul/AKAlertController'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'akaraul' => 'aka@aiweapps.com' }
+  s.author           = { 'akaraul' => 'akaraul@yandex.ru' }
   s.source           = { :git => 'https://github.com/akaraul/AKAlertController.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'AKAlertController/Classes/**/*'
+  s.ios.deployment_target = '10.0'
+  s.cocoapods_version = '>= 1.4.0'
   
-  # s.resource_bundles = {
-  #   'AKAlertController' => ['AKAlertController/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.source_files = 'AKAlertController/Classes/**/*'
+  s.frameworks = 'UIKit'
+  s.dependency 'TinyConstraints', '~> 4.0'
+  
 end
