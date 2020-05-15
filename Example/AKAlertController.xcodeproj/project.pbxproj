@@ -12,13 +12,14 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		69263075651912899D86F285 /* Pods_AKAlertController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE553BF01055F1FC093CBA37 /* Pods_AKAlertController_Example.framework */; };
+		91A9FA007597F633FE1BA301 /* Pods_AKAlertController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D3A7B0035E1528F65831BB /* Pods_AKAlertController_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07AB51B28A6E6336C6B99ED7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		31B77C4F8B790A100A6B34F9 /* Pods-AKAlertController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKAlertController_Example.release.xcconfig"; path = "Target Support Files/Pods-AKAlertController_Example/Pods-AKAlertController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		082FCC6817BA3614E24942D1 /* Pods-AKAlertController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKAlertController_Example.debug.xcconfig"; path = "Target Support Files/Pods-AKAlertController_Example/Pods-AKAlertController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		369313BE37B4C05332E505B8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5152C5BFD62A7BD3E0BCE4A2 /* Pods-AKAlertController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKAlertController_Example.release.xcconfig"; path = "Target Support Files/Pods-AKAlertController_Example/Pods-AKAlertController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* AKAlertController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AKAlertController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -27,11 +28,7 @@
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8B69C6439178B000C466E862 /* AKAlertController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AKAlertController.podspec; path = ../AKAlertController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F52DAE87D73E3C57F202891 /* Pods-AKAlertController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKAlertController_Example.debug.xcconfig"; path = "Target Support Files/Pods-AKAlertController_Example/Pods-AKAlertController_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B2B19F008AC4AC620CE5FE32 /* Pods-AKAlertController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKAlertController_Tests.release.xcconfig"; path = "Target Support Files/Pods-AKAlertController_Tests/Pods-AKAlertController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C1FC7E95444AA1F74F4BFB7A /* Pods_AKAlertController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AKAlertController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6377F7B6D8008CEA23DA952 /* Pods-AKAlertController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKAlertController_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AKAlertController_Tests/Pods-AKAlertController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FE553BF01055F1FC093CBA37 /* Pods_AKAlertController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AKAlertController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2D3A7B0035E1528F65831BB /* Pods_AKAlertController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AKAlertController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69263075651912899D86F285 /* Pods_AKAlertController_Example.framework in Frameworks */,
+				91A9FA007597F633FE1BA301 /* Pods_AKAlertController_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,10 +46,8 @@
 		24D9CCCF050A302F790D9722 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9F52DAE87D73E3C57F202891 /* Pods-AKAlertController_Example.debug.xcconfig */,
-				31B77C4F8B790A100A6B34F9 /* Pods-AKAlertController_Example.release.xcconfig */,
-				E6377F7B6D8008CEA23DA952 /* Pods-AKAlertController_Tests.debug.xcconfig */,
-				B2B19F008AC4AC620CE5FE32 /* Pods-AKAlertController_Tests.release.xcconfig */,
+				082FCC6817BA3614E24942D1 /* Pods-AKAlertController_Example.debug.xcconfig */,
+				5152C5BFD62A7BD3E0BCE4A2 /* Pods-AKAlertController_Example.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -64,7 +59,7 @@
 				607FACD21AFB9204008FA782 /* Example for AKAlertController */,
 				607FACD11AFB9204008FA782 /* Products */,
 				24D9CCCF050A302F790D9722 /* Pods */,
-				869CA928270F9B7A5BB88015 /* Frameworks */,
+				864897B14C22CB631F7D508E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,11 +103,10 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		869CA928270F9B7A5BB88015 /* Frameworks */ = {
+		864897B14C22CB631F7D508E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FE553BF01055F1FC093CBA37 /* Pods_AKAlertController_Example.framework */,
-				C1FC7E95444AA1F74F4BFB7A /* Pods_AKAlertController_Tests.framework */,
+				B2D3A7B0035E1528F65831BB /* Pods_AKAlertController_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -124,11 +118,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AKAlertController_Example" */;
 			buildPhases = (
-				BECC66FE8B0786E0F2B3E2C4 /* [CP] Check Pods Manifest.lock */,
+				C0379AD2EB9A917E43F6E615 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				3453AF0F2A0722A0E6D28DC3 /* [CP] Embed Pods Frameworks */,
+				B731E92DBFBF461D7187C458 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,7 +145,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -188,7 +182,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3453AF0F2A0722A0E6D28DC3 /* [CP] Embed Pods Frameworks */ = {
+		B731E92DBFBF461D7187C458 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -208,7 +202,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AKAlertController_Example/Pods-AKAlertController_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BECC66FE8B0786E0F2B3E2C4 /* [CP] Check Pods Manifest.lock */ = {
+		C0379AD2EB9A917E43F6E615 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -371,7 +365,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F52DAE87D73E3C57F202891 /* Pods-AKAlertController_Example.debug.xcconfig */;
+			baseConfigurationReference = 082FCC6817BA3614E24942D1 /* Pods-AKAlertController_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AKAlertController/Info.plist;
@@ -380,13 +374,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31B77C4F8B790A100A6B34F9 /* Pods-AKAlertController_Example.release.xcconfig */;
+			baseConfigurationReference = 5152C5BFD62A7BD3E0BCE4A2 /* Pods-AKAlertController_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AKAlertController/Info.plist;
@@ -395,7 +389,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
