@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_AKAlertController_TestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_AKAlertController_TestsVersionString[];
+FOUNDATION_EXPORT double TinyConstraintsVersionNumber;
+FOUNDATION_EXPORT const unsigned char TinyConstraintsVersionString[];
 

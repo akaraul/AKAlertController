@@ -1,16 +1,23 @@
 PODS:
-  - AKAlertController (0.1.0)
+  - AKAlertController (1.0.0):
+    - TinyConstraints (~> 4.0)
+  - TinyConstraints (4.0.1)
 
 DEPENDENCIES:
   - AKAlertController (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - TinyConstraints
 
 EXTERNAL SOURCES:
   AKAlertController:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AKAlertController: b7c6fbcebd65f650b6e1c9ac318922e9e32f0bcd
+  AKAlertController: d5894bff6a3633da2d6520ba0beeaf87b15b8184
+  TinyConstraints: 8dd91295e56797648c7bc335dd20e1d91ec4c192
 
-PODFILE CHECKSUM: 093c312b6e7ca2b86158767979edacce5431a683
+PODFILE CHECKSUM: 80e1d0f91f2759741c58d00aa8bdd3ccb8351501
 
 COCOAPODS: 1.9.1

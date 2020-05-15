@@ -7,175 +7,237 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		28E3C3FED722F02506D4AF337B5888DD /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C6BD99840124D0DEF4A147374E2C35 /* ReplaceMe.swift */; };
-		628A39B09DB249EC8BFDC0BD8F5D534D /* Pods-AKAlertController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB935E27C36D1C5AF7DA2BF077ECB16 /* Pods-AKAlertController_Example-dummy.m */; };
-		657465CF2F5B1A4626BF3FCB5B6874DE /* AKAlertController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 38D436864C8CDF1DAC3658EBAADBFB8B /* AKAlertController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8340A51F5043351B2BC1AF387D948873 /* Pods-AKAlertController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 578C143A926603ECD6A6A1A88955B47C /* Pods-AKAlertController_Tests-dummy.m */; };
-		847160D118DAEB7296EBC05190BEDBD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		93478BD20D3C2FE3074C0E21F51ABF6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		D965C85F8939CB0A41D31458EBDE3B05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		E84F495ABC70DF1918D39ABF7809F8DD /* AKAlertController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A760641041A84C0213884367C51CAA /* AKAlertController-dummy.m */; };
-		F6A5322B3A7439D3C88F512298030B95 /* Pods-AKAlertController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67DCCF8BB8FC3D68FEC167A8DBFC8D53 /* Pods-AKAlertController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8427CBAF4D90B24A373CE67F1D2AB57 /* Pods-AKAlertController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 486B51499CF87EB2B1612DA862B1E208 /* Pods-AKAlertController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0087F1FEFFFF5B72F78971BB0196E1D7 /* AKAlertAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A60A995F864745115C92ED47460A480 /* AKAlertAnimator.swift */; };
+		05918BF15CDF469D86E3045F74FC8537 /* AKAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDF5F7226F3C785F09E4E77738E4251 /* AKAlertController.swift */; };
+		06C4E6A698C60613BDC769A7798A6BD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F021652BF202F11A7D7FC72FBEF9C92 /* Foundation.framework */; };
+		14A92514F63AB7F6A586723E3D8DAC35 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20D23DF08847162DAE5A5AF4316600C /* UIKit.framework */; };
+		16BB2A198DF8FE8595E80A41AAEABE88 /* TinyConstraints+superview.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C237044053DBA8B68378C6F80F10A1 /* TinyConstraints+superview.swift */; };
+		202494B85DB31F9C0B376F92BA6B43DD /* TinyConstraints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD33AB0DFE7710D6CCE74FD209C73F3 /* TinyConstraints.framework */; };
+		23B3CAB31845D48CEA3777A6B5275333 /* TinyConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53090B7B9F2DA5A542B6E0B2472A6E8A /* TinyConstraints.swift */; };
+		25677E19CC11DA8028AA2E7A6D5AC2D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F021652BF202F11A7D7FC72FBEF9C92 /* Foundation.framework */; };
+		28832A890707EB48FE7716C147CC04CC /* AKAlertController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BBDC5D75AC7752377AC8A545835987F /* AKAlertController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		317C3022DC9ACB63BE808B72F8F0E88A /* TinyConstraints-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C29655FF0056FD25EC57F7909547C21E /* TinyConstraints-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		363EA8581E85533A0E3038F9DB6239A5 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09FE24794B2ED4575096B2F66BA5CC9 /* Constraints.swift */; };
+		3A28695FE0CD1D579E88A755C31FBF00 /* AKAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B56103907A7D891EC5736AFAA1D3341 /* AKAlertAction.swift */; };
+		421CB5E0AFD40806F4281DCE2EDD578E /* Abstraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2BF895255A9365BC69CAD063F1C0B4 /* Abstraction.swift */; };
+		516D6FAF468C28F4DDB88964603BB71F /* Pods-AKAlertController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E4BB3F55A4DFFDAE4584ACCE9A99C0 /* Pods-AKAlertController_Example-dummy.m */; };
+		59AD4655B2CD4EA5C363DDB5A6275310 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CF0EFA80D02F8C35745900DA3F45FF /* Stack.swift */; };
+		AAD2972BDB44AB211C8AA29A6611990B /* Constrainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A2DF43C3E5A1D1E9A559D9F154D5D4 /* Constrainable.swift */; };
+		BDE8B3E1C55B268FD20E445889FF3AD3 /* AKAlertController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D778E0E5EDACAFB27337AFF0A87FC7 /* AKAlertController-dummy.m */; };
+		D1D5C3ADCA8950AE1818D0BD67690686 /* TinyEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78051CAF65CCFDC2B674F3ABC68C4607 /* TinyEdgeInsets.swift */; };
+		D41EA923B4E283A2C715364F2E609061 /* Pods-AKAlertController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2C502BF70C31DBAED33AE0C983FFD76 /* Pods-AKAlertController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5FE11F557A2BED13A3017EAA8D7A624 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F021652BF202F11A7D7FC72FBEF9C92 /* Foundation.framework */; };
+		FD5F5B333D2D5566D31C9159A0AFABA3 /* TinyConstraints-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D77A6777BC9B18328AE9BE85C5CF8D00 /* TinyConstraints-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		11C3EB0E736266A2FB84F6532C85C1E1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 06C268F26105860323396377F9CCFEF8;
-			remoteInfo = "Pods-AKAlertController_Example";
-		};
-		A6491937A5E57E9E08A9ACACA9D2D2D4 /* PBXContainerItemProxy */ = {
+		C01DDC825B64FEB4DE2695D575B2C905 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A3639CAAB78DC77101233E3CBAE0AEEA;
 			remoteInfo = AKAlertController;
 		};
+		CF44797FD0D6C1F5E7D1AF9EBC87F1CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45C4E325E7851DD54CC3AD44C7A71935;
+			remoteInfo = TinyConstraints;
+		};
+		F374BF1BE801ED711AAB657348E7873E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45C4E325E7851DD54CC3AD44C7A71935;
+			remoteInfo = TinyConstraints;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0CF6B3A997FD33473DD6CE403D068032 /* Pods-AKAlertController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AKAlertController_Tests.modulemap"; sourceTree = "<group>"; };
-		0D04928EE4BA1A1076B6ADF8F04A171B /* Pods-AKAlertController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AKAlertController_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		107CC0CC12390A906609B5E1137F92AA /* Pods-AKAlertController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AKAlertController_Example.modulemap"; sourceTree = "<group>"; };
-		21B72287487DFA7F1DED8B1903161218 /* AKAlertController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AKAlertController-prefix.pch"; sourceTree = "<group>"; };
-		318110C05E902D0BA446A015E42A1B15 /* Pods-AKAlertController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AKAlertController_Example.release.xcconfig"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		38400CBADB7C52A557CA6781AE3AAC34 /* Pods-AKAlertController_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AKAlertController_Example-Info.plist"; sourceTree = "<group>"; };
-		38D436864C8CDF1DAC3658EBAADBFB8B /* AKAlertController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AKAlertController-umbrella.h"; sourceTree = "<group>"; };
-		39C906DD7D0F3716523936936825A7F0 /* Pods-AKAlertController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AKAlertController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		486B51499CF87EB2B1612DA862B1E208 /* Pods-AKAlertController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AKAlertController_Tests-umbrella.h"; sourceTree = "<group>"; };
-		4E16420AED71B8D7E98F2DBC385E8942 /* Pods_AKAlertController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AKAlertController_Tests.framework; path = "Pods-AKAlertController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		50D039C54FC3C6CD5831DB37E22F89F0 /* AKAlertController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AKAlertController.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		53E58BB5D99CD58E287E914D6A2DB57A /* Pods-AKAlertController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AKAlertController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		551EE2B32B660EF4087E92CCA9FB4FDA /* AKAlertController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AKAlertController.release.xcconfig; sourceTree = "<group>"; };
-		56B677BDDDF7EBB4FCB05952499560FE /* AKAlertController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AKAlertController.debug.xcconfig; sourceTree = "<group>"; };
-		578C143A926603ECD6A6A1A88955B47C /* Pods-AKAlertController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AKAlertController_Tests-dummy.m"; sourceTree = "<group>"; };
-		63A760641041A84C0213884367C51CAA /* AKAlertController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AKAlertController-dummy.m"; sourceTree = "<group>"; };
-		67DCCF8BB8FC3D68FEC167A8DBFC8D53 /* Pods-AKAlertController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AKAlertController_Example-umbrella.h"; sourceTree = "<group>"; };
+		0805BDFB55C27570810BCE32AB2CDC24 /* AKAlertController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AKAlertController-prefix.pch"; sourceTree = "<group>"; };
+		0B56103907A7D891EC5736AFAA1D3341 /* AKAlertAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AKAlertAction.swift; path = AKAlertController/Classes/AKAlertAction.swift; sourceTree = "<group>"; };
+		0CDBE759B4602166A40F5901D59364FA /* Pods-AKAlertController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AKAlertController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		13CF0EFA80D02F8C35745900DA3F45FF /* Stack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stack.swift; path = TinyConstraints/Classes/Stack.swift; sourceTree = "<group>"; };
+		16D778E0E5EDACAFB27337AFF0A87FC7 /* AKAlertController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AKAlertController-dummy.m"; sourceTree = "<group>"; };
+		1BF03D2133CA6AF04040A63DA34C3F57 /* TinyConstraints-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TinyConstraints-Info.plist"; sourceTree = "<group>"; };
+		248EB203AE249596FFC55952F5590D95 /* TinyConstraints.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TinyConstraints.framework; path = TinyConstraints.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27EE30560CBBBBDA7D190B99EBA2E783 /* Pods-AKAlertController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AKAlertController_Example.modulemap"; sourceTree = "<group>"; };
+		2F021652BF202F11A7D7FC72FBEF9C92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		37C5A7A34282932064D3F3E64FD93EFF /* TinyConstraints.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TinyConstraints.modulemap; sourceTree = "<group>"; };
+		3DD33AB0DFE7710D6CCE74FD209C73F3 /* TinyConstraints.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TinyConstraints.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40A2DF43C3E5A1D1E9A559D9F154D5D4 /* Constrainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constrainable.swift; path = TinyConstraints/Classes/Constrainable.swift; sourceTree = "<group>"; };
+		4B1ABF1BEB9F76542E9531C8E6F39940 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		4BBDC5D75AC7752377AC8A545835987F /* AKAlertController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AKAlertController-umbrella.h"; sourceTree = "<group>"; };
+		53090B7B9F2DA5A542B6E0B2472A6E8A /* TinyConstraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TinyConstraints.swift; path = TinyConstraints/Classes/TinyConstraints.swift; sourceTree = "<group>"; };
+		6A8563F68FDB7CCF7C0AC81C8A89E957 /* Pods-AKAlertController_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AKAlertController_Example-Info.plist"; sourceTree = "<group>"; };
 		6DAC31B774EA89526F6407D5653169A1 /* Pods_AKAlertController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AKAlertController_Example.framework; path = "Pods-AKAlertController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6EB935E27C36D1C5AF7DA2BF077ECB16 /* Pods-AKAlertController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AKAlertController_Example-dummy.m"; sourceTree = "<group>"; };
-		80F029B83409B223330490700B0E077C /* AKAlertController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AKAlertController.modulemap; sourceTree = "<group>"; };
-		854152B921C74CF788C8D635A4EA8B0F /* Pods-AKAlertController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AKAlertController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		88EB6F8C16BE5BE69C78DC5F4A5F3C26 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		912276BE66C4F5431C51244899A7B04E /* Pods-AKAlertController_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AKAlertController_Tests-Info.plist"; sourceTree = "<group>"; };
-		95EDBA2205D3500F23ABFF59EC55C3F8 /* Pods-AKAlertController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AKAlertController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		9ABC92D8F371F1B070F720A118A458F1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		9D3E782A088A06B7684B74D5E03493E6 /* Pods-AKAlertController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AKAlertController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		78051CAF65CCFDC2B674F3ABC68C4607 /* TinyEdgeInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TinyEdgeInsets.swift; path = TinyConstraints/Classes/TinyEdgeInsets.swift; sourceTree = "<group>"; };
+		7D2BF895255A9365BC69CAD063F1C0B4 /* Abstraction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Abstraction.swift; path = TinyConstraints/Classes/Abstraction.swift; sourceTree = "<group>"; };
+		8CDF5F7226F3C785F09E4E77738E4251 /* AKAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AKAlertController.swift; path = AKAlertController/Classes/AKAlertController.swift; sourceTree = "<group>"; };
+		8E9F1234FE86C30AA1E70F666BF4903C /* Pods-AKAlertController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AKAlertController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9A60A995F864745115C92ED47460A480 /* AKAlertAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AKAlertAnimator.swift; path = AKAlertController/Classes/AKAlertAnimator.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A2DE586F3366E08A600201E7CA2E4646 /* AKAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AKAlertController.framework; path = AKAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAC8B84BAE644693966BEEEBDC6F3640 /* Pods-AKAlertController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AKAlertController_Example-frameworks.sh"; sourceTree = "<group>"; };
-		C2C6BD99840124D0DEF4A147374E2C35 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = AKAlertController/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		D4461840F1991C0CDEF19248F4248279 /* AKAlertController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AKAlertController-Info.plist"; sourceTree = "<group>"; };
-		E2DF24ECB77254A6E4B74D972F69E1FE /* Pods-AKAlertController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AKAlertController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA4692E9681535B3CB56707D8550B05E /* AKAlertController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AKAlertController.debug.xcconfig; sourceTree = "<group>"; };
+		B7AAA18F91E437521C925026B0C10300 /* Pods-AKAlertController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AKAlertController_Example-frameworks.sh"; sourceTree = "<group>"; };
+		BB85D18E365174A2139C83F73EB2832C /* Pods-AKAlertController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AKAlertController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		BFE2FED9E5E9AC54EDA0E6C44E8B1755 /* TinyConstraints.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TinyConstraints.release.xcconfig; sourceTree = "<group>"; };
+		C09FE24794B2ED4575096B2F66BA5CC9 /* Constraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraints.swift; path = TinyConstraints/Classes/Constraints.swift; sourceTree = "<group>"; };
+		C29655FF0056FD25EC57F7909547C21E /* TinyConstraints-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinyConstraints-umbrella.h"; sourceTree = "<group>"; };
+		C2C502BF70C31DBAED33AE0C983FFD76 /* Pods-AKAlertController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AKAlertController_Example-umbrella.h"; sourceTree = "<group>"; };
+		C6C237044053DBA8B68378C6F80F10A1 /* TinyConstraints+superview.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TinyConstraints+superview.swift"; path = "TinyConstraints/Classes/TinyConstraints+superview.swift"; sourceTree = "<group>"; };
+		C817937C8B72D0ADCFC43444C34E7101 /* AKAlertController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AKAlertController.release.xcconfig; sourceTree = "<group>"; };
+		D14B8BA2E491A6DE3EEBB46DF34D90D4 /* TinyConstraints-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinyConstraints-prefix.pch"; sourceTree = "<group>"; };
+		D74ED420F6EE25BAFF91BD335C1C81C6 /* AKAlertController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AKAlertController.modulemap; sourceTree = "<group>"; };
+		D77A6777BC9B18328AE9BE85C5CF8D00 /* TinyConstraints-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TinyConstraints-dummy.m"; sourceTree = "<group>"; };
+		D92DE3452FEBE461DCDC51F5F402BF71 /* Pods-AKAlertController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AKAlertController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		DE0CD2145BCB0AD134209E261CE523FB /* AKAlertController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AKAlertController-Info.plist"; sourceTree = "<group>"; };
+		E5E27C1634FB36D16B17E42A64881B91 /* TinyConstraints.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TinyConstraints.debug.xcconfig; sourceTree = "<group>"; };
+		E8E4BB3F55A4DFFDAE4584ACCE9A99C0 /* Pods-AKAlertController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AKAlertController_Example-dummy.m"; sourceTree = "<group>"; };
+		F20D23DF08847162DAE5A5AF4316600C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F46345BCC83988A29663F07B4E0A520D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F840B6302A758B48F2FF3877F3B62080 /* AKAlertController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AKAlertController.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		19B311C29D1085A8A4C56011462165D9 /* Frameworks */ = {
+		67EA086A7A290E7DB4B0F47745DB10EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				847160D118DAEB7296EBC05190BEDBD3 /* Foundation.framework in Frameworks */,
+				E5FE11F557A2BED13A3017EAA8D7A624 /* Foundation.framework in Frameworks */,
+				202494B85DB31F9C0B376F92BA6B43DD /* TinyConstraints.framework in Frameworks */,
+				14A92514F63AB7F6A586723E3D8DAC35 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7E3C48EE4C26494489F5238896A36E2A /* Frameworks */ = {
+		78B98690452F65A3FB38AB395B95E39F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93478BD20D3C2FE3074C0E21F51ABF6B /* Foundation.framework in Frameworks */,
+				25677E19CC11DA8028AA2E7A6D5AC2D5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF49D297165FE4900B06B3CF3E56D9E3 /* Frameworks */ = {
+		E411B4D981869B1EB785464820531C14 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D965C85F8939CB0A41D31458EBDE3B05 /* Foundation.framework in Frameworks */,
+				06C4E6A698C60613BDC769A7798A6BD3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C12E9543D25AF80044BC45B5952E941 /* Pods-AKAlertController_Example */ = {
+		0779DABB0F459B54F6DDEF9579DE0D55 /* Pods-AKAlertController_Example */ = {
 			isa = PBXGroup;
 			children = (
-				107CC0CC12390A906609B5E1137F92AA /* Pods-AKAlertController_Example.modulemap */,
-				854152B921C74CF788C8D635A4EA8B0F /* Pods-AKAlertController_Example-acknowledgements.markdown */,
-				95EDBA2205D3500F23ABFF59EC55C3F8 /* Pods-AKAlertController_Example-acknowledgements.plist */,
-				6EB935E27C36D1C5AF7DA2BF077ECB16 /* Pods-AKAlertController_Example-dummy.m */,
-				BAC8B84BAE644693966BEEEBDC6F3640 /* Pods-AKAlertController_Example-frameworks.sh */,
-				38400CBADB7C52A557CA6781AE3AAC34 /* Pods-AKAlertController_Example-Info.plist */,
-				67DCCF8BB8FC3D68FEC167A8DBFC8D53 /* Pods-AKAlertController_Example-umbrella.h */,
-				0D04928EE4BA1A1076B6ADF8F04A171B /* Pods-AKAlertController_Example.debug.xcconfig */,
-				318110C05E902D0BA446A015E42A1B15 /* Pods-AKAlertController_Example.release.xcconfig */,
+				27EE30560CBBBBDA7D190B99EBA2E783 /* Pods-AKAlertController_Example.modulemap */,
+				0CDBE759B4602166A40F5901D59364FA /* Pods-AKAlertController_Example-acknowledgements.markdown */,
+				D92DE3452FEBE461DCDC51F5F402BF71 /* Pods-AKAlertController_Example-acknowledgements.plist */,
+				E8E4BB3F55A4DFFDAE4584ACCE9A99C0 /* Pods-AKAlertController_Example-dummy.m */,
+				B7AAA18F91E437521C925026B0C10300 /* Pods-AKAlertController_Example-frameworks.sh */,
+				6A8563F68FDB7CCF7C0AC81C8A89E957 /* Pods-AKAlertController_Example-Info.plist */,
+				C2C502BF70C31DBAED33AE0C983FFD76 /* Pods-AKAlertController_Example-umbrella.h */,
+				BB85D18E365174A2139C83F73EB2832C /* Pods-AKAlertController_Example.debug.xcconfig */,
+				8E9F1234FE86C30AA1E70F666BF4903C /* Pods-AKAlertController_Example.release.xcconfig */,
 			);
 			name = "Pods-AKAlertController_Example";
 			path = "Target Support Files/Pods-AKAlertController_Example";
 			sourceTree = "<group>";
 		};
-		2139DE3DBBEB657EA221B1A8DBEBA1C9 /* Pod */ = {
+		1FF07980AEEA60B67CC1B255B03DF6C8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				50D039C54FC3C6CD5831DB37E22F89F0 /* AKAlertController.podspec */,
-				9ABC92D8F371F1B070F720A118A458F1 /* LICENSE */,
-				88EB6F8C16BE5BE69C78DC5F4A5F3C26 /* README.md */,
+				3DD33AB0DFE7710D6CCE74FD209C73F3 /* TinyConstraints.framework */,
+				9822DAD83ADBE4313DCBA431F8BC4CE6 /* iOS */,
 			);
-			name = Pod;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		311F9A26AAE6D1379FD4A69DA3067F7C /* Products */ = {
+		345DCAA969E0FAE86EB2948F3BAE23FF /* AKAlertController */ = {
 			isa = PBXGroup;
 			children = (
-				A2DE586F3366E08A600201E7CA2E4646 /* AKAlertController.framework */,
-				6DAC31B774EA89526F6407D5653169A1 /* Pods_AKAlertController_Example.framework */,
-				4E16420AED71B8D7E98F2DBC385E8942 /* Pods_AKAlertController_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		32F62730ACFE0082DC52F1B935B1084F /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A037B258AB24BDFB528C6C805C4A3817 /* AKAlertController */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		696AEA6AA81F5D7EAC172F3147E26C8C /* Pods-AKAlertController_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				0CF6B3A997FD33473DD6CE403D068032 /* Pods-AKAlertController_Tests.modulemap */,
-				39C906DD7D0F3716523936936825A7F0 /* Pods-AKAlertController_Tests-acknowledgements.markdown */,
-				53E58BB5D99CD58E287E914D6A2DB57A /* Pods-AKAlertController_Tests-acknowledgements.plist */,
-				578C143A926603ECD6A6A1A88955B47C /* Pods-AKAlertController_Tests-dummy.m */,
-				912276BE66C4F5431C51244899A7B04E /* Pods-AKAlertController_Tests-Info.plist */,
-				486B51499CF87EB2B1612DA862B1E208 /* Pods-AKAlertController_Tests-umbrella.h */,
-				E2DF24ECB77254A6E4B74D972F69E1FE /* Pods-AKAlertController_Tests.debug.xcconfig */,
-				9D3E782A088A06B7684B74D5E03493E6 /* Pods-AKAlertController_Tests.release.xcconfig */,
-			);
-			name = "Pods-AKAlertController_Tests";
-			path = "Target Support Files/Pods-AKAlertController_Tests";
-			sourceTree = "<group>";
-		};
-		A037B258AB24BDFB528C6C805C4A3817 /* AKAlertController */ = {
-			isa = PBXGroup;
-			children = (
-				C2C6BD99840124D0DEF4A147374E2C35 /* ReplaceMe.swift */,
-				2139DE3DBBEB657EA221B1A8DBEBA1C9 /* Pod */,
-				DB89AE57AD5BC4B1E4C23371F6532B65 /* Support Files */,
+				0B56103907A7D891EC5736AFAA1D3341 /* AKAlertAction.swift */,
+				9A60A995F864745115C92ED47460A480 /* AKAlertAnimator.swift */,
+				8CDF5F7226F3C785F09E4E77738E4251 /* AKAlertController.swift */,
+				76F60EB671D435D9C3902174F46E650D /* Pod */,
+				62F81DCACAABE7BAF4A7CD1E0091A824 /* Support Files */,
 			);
 			name = AKAlertController;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+		5B05511071A6415D4082698D7D214C05 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				0779DABB0F459B54F6DDEF9579DE0D55 /* Pods-AKAlertController_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		62F81DCACAABE7BAF4A7CD1E0091A824 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D74ED420F6EE25BAFF91BD335C1C81C6 /* AKAlertController.modulemap */,
+				16D778E0E5EDACAFB27337AFF0A87FC7 /* AKAlertController-dummy.m */,
+				DE0CD2145BCB0AD134209E261CE523FB /* AKAlertController-Info.plist */,
+				0805BDFB55C27570810BCE32AB2CDC24 /* AKAlertController-prefix.pch */,
+				4BBDC5D75AC7752377AC8A545835987F /* AKAlertController-umbrella.h */,
+				AA4692E9681535B3CB56707D8550B05E /* AKAlertController.debug.xcconfig */,
+				C817937C8B72D0ADCFC43444C34E7101 /* AKAlertController.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AKAlertController";
+			sourceTree = "<group>";
+		};
+		66F7B86CE8FCF1C7A66B95E3D03A19DD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				37C5A7A34282932064D3F3E64FD93EFF /* TinyConstraints.modulemap */,
+				D77A6777BC9B18328AE9BE85C5CF8D00 /* TinyConstraints-dummy.m */,
+				1BF03D2133CA6AF04040A63DA34C3F57 /* TinyConstraints-Info.plist */,
+				D14B8BA2E491A6DE3EEBB46DF34D90D4 /* TinyConstraints-prefix.pch */,
+				C29655FF0056FD25EC57F7909547C21E /* TinyConstraints-umbrella.h */,
+				E5E27C1634FB36D16B17E42A64881B91 /* TinyConstraints.debug.xcconfig */,
+				BFE2FED9E5E9AC54EDA0E6C44E8B1755 /* TinyConstraints.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TinyConstraints";
+			sourceTree = "<group>";
+		};
+		6ABEEA7AE8070D3C9261B4662AC5A6F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA51ADCB66A7E8EED3331ECA1D6C58FC /* TinyConstraints */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		76F60EB671D435D9C3902174F46E650D /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F840B6302A758B48F2FF3877F3B62080 /* AKAlertController.podspec */,
+				F46345BCC83988A29663F07B4E0A520D /* LICENSE */,
+				4B1ABF1BEB9F76542E9531C8E6F39940 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		8886C8B9A6A719B0A78A4CD8FD119D3D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				345DCAA969E0FAE86EB2948F3BAE23FF /* AKAlertController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		9822DAD83ADBE4313DCBA431F8BC4CE6 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2F021652BF202F11A7D7FC72FBEF9C92 /* Foundation.framework */,
+				F20D23DF08847162DAE5A5AF4316600C /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -184,69 +246,64 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				32F62730ACFE0082DC52F1B935B1084F /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				311F9A26AAE6D1379FD4A69DA3067F7C /* Products */,
-				FA202BB7DCB4E8FD07CE3C5CA811DA75 /* Targets Support Files */,
+				8886C8B9A6A719B0A78A4CD8FD119D3D /* Development Pods */,
+				1FF07980AEEA60B67CC1B255B03DF6C8 /* Frameworks */,
+				6ABEEA7AE8070D3C9261B4662AC5A6F2 /* Pods */,
+				FAC50A42656519DF8A992D5B7B1DB558 /* Products */,
+				5B05511071A6415D4082698D7D214C05 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		EA51ADCB66A7E8EED3331ECA1D6C58FC /* TinyConstraints */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				7D2BF895255A9365BC69CAD063F1C0B4 /* Abstraction.swift */,
+				40A2DF43C3E5A1D1E9A559D9F154D5D4 /* Constrainable.swift */,
+				C09FE24794B2ED4575096B2F66BA5CC9 /* Constraints.swift */,
+				13CF0EFA80D02F8C35745900DA3F45FF /* Stack.swift */,
+				53090B7B9F2DA5A542B6E0B2472A6E8A /* TinyConstraints.swift */,
+				C6C237044053DBA8B68378C6F80F10A1 /* TinyConstraints+superview.swift */,
+				78051CAF65CCFDC2B674F3ABC68C4607 /* TinyEdgeInsets.swift */,
+				66F7B86CE8FCF1C7A66B95E3D03A19DD /* Support Files */,
 			);
-			name = Frameworks;
+			name = TinyConstraints;
+			path = TinyConstraints;
 			sourceTree = "<group>";
 		};
-		DB89AE57AD5BC4B1E4C23371F6532B65 /* Support Files */ = {
+		FAC50A42656519DF8A992D5B7B1DB558 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				80F029B83409B223330490700B0E077C /* AKAlertController.modulemap */,
-				63A760641041A84C0213884367C51CAA /* AKAlertController-dummy.m */,
-				D4461840F1991C0CDEF19248F4248279 /* AKAlertController-Info.plist */,
-				21B72287487DFA7F1DED8B1903161218 /* AKAlertController-prefix.pch */,
-				38D436864C8CDF1DAC3658EBAADBFB8B /* AKAlertController-umbrella.h */,
-				56B677BDDDF7EBB4FCB05952499560FE /* AKAlertController.debug.xcconfig */,
-				551EE2B32B660EF4087E92CCA9FB4FDA /* AKAlertController.release.xcconfig */,
+				A2DE586F3366E08A600201E7CA2E4646 /* AKAlertController.framework */,
+				6DAC31B774EA89526F6407D5653169A1 /* Pods_AKAlertController_Example.framework */,
+				248EB203AE249596FFC55952F5590D95 /* TinyConstraints.framework */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/AKAlertController";
-			sourceTree = "<group>";
-		};
-		FA202BB7DCB4E8FD07CE3C5CA811DA75 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0C12E9543D25AF80044BC45B5952E941 /* Pods-AKAlertController_Example */,
-				696AEA6AA81F5D7EAC172F3147E26C8C /* Pods-AKAlertController_Tests */,
-			);
-			name = "Targets Support Files";
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		20E8FD34B41E92298216F48B901EE7A2 /* Headers */ = {
+		19810CECC8C47F373E0F866615F2BE79 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				657465CF2F5B1A4626BF3FCB5B6874DE /* AKAlertController-umbrella.h in Headers */,
+				317C3022DC9ACB63BE808B72F8F0E88A /* TinyConstraints-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		50F1EE3FC936B2E1BBC0583BE5E097AF /* Headers */ = {
+		1E680A0EB7D44EE7C20E834CDB3B83FA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8427CBAF4D90B24A373CE67F1D2AB57 /* Pods-AKAlertController_Tests-umbrella.h in Headers */,
+				D41EA923B4E283A2C715364F2E609061 /* Pods-AKAlertController_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDE3BB40F9481D5D23CA532D0473CE21 /* Headers */ = {
+		642011173684AC2F39F04B7075E0CFE7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6A5322B3A7439D3C88F512298030B95 /* Pods-AKAlertController_Example-umbrella.h in Headers */,
+				28832A890707EB48FE7716C147CC04CC /* AKAlertController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,54 +312,55 @@
 /* Begin PBXNativeTarget section */
 		06C268F26105860323396377F9CCFEF8 /* Pods-AKAlertController_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8832B35CBAA33FEFE76282315762DD08 /* Build configuration list for PBXNativeTarget "Pods-AKAlertController_Example" */;
+			buildConfigurationList = 0F3AFAAA2F61B5F6FFB6EFF901BC2508 /* Build configuration list for PBXNativeTarget "Pods-AKAlertController_Example" */;
 			buildPhases = (
-				EDE3BB40F9481D5D23CA532D0473CE21 /* Headers */,
-				41A42A04B48F978541F2E1C77407214D /* Sources */,
-				FF49D297165FE4900B06B3CF3E56D9E3 /* Frameworks */,
-				09FD01082B29F122A3AEF40BEE56B1BE /* Resources */,
+				1E680A0EB7D44EE7C20E834CDB3B83FA /* Headers */,
+				CAABD977F9E11185F4E47A1A79FAC428 /* Sources */,
+				E411B4D981869B1EB785464820531C14 /* Frameworks */,
+				6280F6CB40B17608EA0D8CFDF801F33C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				38AA100000A04998CAE42DF72356E658 /* PBXTargetDependency */,
+				E0CF29C476D6898FD08957C3C6CCE67C /* PBXTargetDependency */,
+				3A73B8024BA9CAABF858C192D77BC864 /* PBXTargetDependency */,
 			);
 			name = "Pods-AKAlertController_Example";
 			productName = "Pods-AKAlertController_Example";
 			productReference = 6DAC31B774EA89526F6407D5653169A1 /* Pods_AKAlertController_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		172AFC9E2226D105D36AC36A8962EA03 /* Pods-AKAlertController_Tests */ = {
+		45C4E325E7851DD54CC3AD44C7A71935 /* TinyConstraints */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DB852CD8ADD88BFDFF1958B58D35CF00 /* Build configuration list for PBXNativeTarget "Pods-AKAlertController_Tests" */;
+			buildConfigurationList = 671E2DE87EED13410ACA209CDD0B5F59 /* Build configuration list for PBXNativeTarget "TinyConstraints" */;
 			buildPhases = (
-				50F1EE3FC936B2E1BBC0583BE5E097AF /* Headers */,
-				95A925B79F286C05FF118FB735D51714 /* Sources */,
-				19B311C29D1085A8A4C56011462165D9 /* Frameworks */,
-				98D2A7B72A8DB007CA969C429FED90BD /* Resources */,
+				19810CECC8C47F373E0F866615F2BE79 /* Headers */,
+				601D7DDA72193F725F8FB4D9EC8EF6E2 /* Sources */,
+				78B98690452F65A3FB38AB395B95E39F /* Frameworks */,
+				9A215980C14D212555B8B43A63F47D03 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				903C55F2905E6411006D6809096BCE52 /* PBXTargetDependency */,
 			);
-			name = "Pods-AKAlertController_Tests";
-			productName = "Pods-AKAlertController_Tests";
-			productReference = 4E16420AED71B8D7E98F2DBC385E8942 /* Pods_AKAlertController_Tests.framework */;
+			name = TinyConstraints;
+			productName = TinyConstraints;
+			productReference = 248EB203AE249596FFC55952F5590D95 /* TinyConstraints.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A3639CAAB78DC77101233E3CBAE0AEEA /* AKAlertController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F19A53FBD2CF45A0F9EF8883A32E7956 /* Build configuration list for PBXNativeTarget "AKAlertController" */;
+			buildConfigurationList = BB16D35FAD62DDC71C421680D85E3DFF /* Build configuration list for PBXNativeTarget "AKAlertController" */;
 			buildPhases = (
-				20E8FD34B41E92298216F48B901EE7A2 /* Headers */,
-				71D18DA5C866CF70058B343DA049C61B /* Sources */,
-				7E3C48EE4C26494489F5238896A36E2A /* Frameworks */,
-				425D15D415AD40315FB7343EBDED173D /* Resources */,
+				642011173684AC2F39F04B7075E0CFE7 /* Headers */,
+				9B97F1812D923A4C710F82D48C569577 /* Sources */,
+				67EA086A7A290E7DB4B0F47745DB10EB /* Frameworks */,
+				CD76C4056F38884DCE957B32CEEE8B57 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D6042F81C0E88BA7F3D34A1F513C8A56 /* PBXTargetDependency */,
 			);
 			name = AKAlertController;
 			productName = AKAlertController;
@@ -327,33 +385,33 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 311F9A26AAE6D1379FD4A69DA3067F7C /* Products */;
+			productRefGroup = FAC50A42656519DF8A992D5B7B1DB558 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				A3639CAAB78DC77101233E3CBAE0AEEA /* AKAlertController */,
 				06C268F26105860323396377F9CCFEF8 /* Pods-AKAlertController_Example */,
-				172AFC9E2226D105D36AC36A8962EA03 /* Pods-AKAlertController_Tests */,
+				45C4E325E7851DD54CC3AD44C7A71935 /* TinyConstraints */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		09FD01082B29F122A3AEF40BEE56B1BE /* Resources */ = {
+		6280F6CB40B17608EA0D8CFDF801F33C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		425D15D415AD40315FB7343EBDED173D /* Resources */ = {
+		9A215980C14D212555B8B43A63F47D03 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98D2A7B72A8DB007CA969C429FED90BD /* Resources */ = {
+		CD76C4056F38884DCE957B32CEEE8B57 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -363,86 +421,67 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		41A42A04B48F978541F2E1C77407214D /* Sources */ = {
+		601D7DDA72193F725F8FB4D9EC8EF6E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				628A39B09DB249EC8BFDC0BD8F5D534D /* Pods-AKAlertController_Example-dummy.m in Sources */,
+				421CB5E0AFD40806F4281DCE2EDD578E /* Abstraction.swift in Sources */,
+				AAD2972BDB44AB211C8AA29A6611990B /* Constrainable.swift in Sources */,
+				363EA8581E85533A0E3038F9DB6239A5 /* Constraints.swift in Sources */,
+				59AD4655B2CD4EA5C363DDB5A6275310 /* Stack.swift in Sources */,
+				16BB2A198DF8FE8595E80A41AAEABE88 /* TinyConstraints+superview.swift in Sources */,
+				FD5F5B333D2D5566D31C9159A0AFABA3 /* TinyConstraints-dummy.m in Sources */,
+				23B3CAB31845D48CEA3777A6B5275333 /* TinyConstraints.swift in Sources */,
+				D1D5C3ADCA8950AE1818D0BD67690686 /* TinyEdgeInsets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		71D18DA5C866CF70058B343DA049C61B /* Sources */ = {
+		9B97F1812D923A4C710F82D48C569577 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E84F495ABC70DF1918D39ABF7809F8DD /* AKAlertController-dummy.m in Sources */,
-				28E3C3FED722F02506D4AF337B5888DD /* ReplaceMe.swift in Sources */,
+				3A28695FE0CD1D579E88A755C31FBF00 /* AKAlertAction.swift in Sources */,
+				0087F1FEFFFF5B72F78971BB0196E1D7 /* AKAlertAnimator.swift in Sources */,
+				BDE8B3E1C55B268FD20E445889FF3AD3 /* AKAlertController-dummy.m in Sources */,
+				05918BF15CDF469D86E3045F74FC8537 /* AKAlertController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		95A925B79F286C05FF118FB735D51714 /* Sources */ = {
+		CAABD977F9E11185F4E47A1A79FAC428 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8340A51F5043351B2BC1AF387D948873 /* Pods-AKAlertController_Tests-dummy.m in Sources */,
+				516D6FAF468C28F4DDB88964603BB71F /* Pods-AKAlertController_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		38AA100000A04998CAE42DF72356E658 /* PBXTargetDependency */ = {
+		3A73B8024BA9CAABF858C192D77BC864 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TinyConstraints;
+			target = 45C4E325E7851DD54CC3AD44C7A71935 /* TinyConstraints */;
+			targetProxy = F374BF1BE801ED711AAB657348E7873E /* PBXContainerItemProxy */;
+		};
+		D6042F81C0E88BA7F3D34A1F513C8A56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TinyConstraints;
+			target = 45C4E325E7851DD54CC3AD44C7A71935 /* TinyConstraints */;
+			targetProxy = CF44797FD0D6C1F5E7D1AF9EBC87F1CE /* PBXContainerItemProxy */;
+		};
+		E0CF29C476D6898FD08957C3C6CCE67C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AKAlertController;
 			target = A3639CAAB78DC77101233E3CBAE0AEEA /* AKAlertController */;
-			targetProxy = A6491937A5E57E9E08A9ACACA9D2D2D4 /* PBXContainerItemProxy */;
-		};
-		903C55F2905E6411006D6809096BCE52 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-AKAlertController_Example";
-			target = 06C268F26105860323396377F9CCFEF8 /* Pods-AKAlertController_Example */;
-			targetProxy = 11C3EB0E736266A2FB84F6532C85C1E1 /* PBXContainerItemProxy */;
+			targetProxy = C01DDC825B64FEB4DE2695D575B2C905 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		06FDBFF63F7C75BC68B0CB0585CFED1B /* Release */ = {
+		027C1041F61E6598931FDB920CD9C4BD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 318110C05E902D0BA446A015E42A1B15 /* Pods-AKAlertController_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AKAlertController_Example/Pods-AKAlertController_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AKAlertController_Example/Pods-AKAlertController_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		168513CC14DF08AE199BB1D51EBB5D9A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 551EE2B32B660EF4087E92CCA9FB4FDA /* AKAlertController.release.xcconfig */;
+			baseConfigurationReference = BFE2FED9E5E9AC54EDA0E6C44E8B1755 /* TinyConstraints.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -453,184 +492,26 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AKAlertController/AKAlertController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AKAlertController/AKAlertController-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/TinyConstraints/TinyConstraints-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TinyConstraints/TinyConstraints-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AKAlertController/AKAlertController.modulemap";
-				PRODUCT_MODULE_NAME = AKAlertController;
-				PRODUCT_NAME = AKAlertController;
+				MODULEMAP_FILE = "Target Support Files/TinyConstraints/TinyConstraints.modulemap";
+				PRODUCT_MODULE_NAME = TinyConstraints;
+				PRODUCT_NAME = TinyConstraints;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		42DAB1173DFFE296C7C5C384B8108288 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2DF24ECB77254A6E4B74D972F69E1FE /* Pods-AKAlertController_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AKAlertController_Tests/Pods-AKAlertController_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AKAlertController_Tests/Pods-AKAlertController_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6BF23714EC538DD1C9BF70F28F3AF343 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56B677BDDDF7EBB4FCB05952499560FE /* AKAlertController.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AKAlertController/AKAlertController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AKAlertController/AKAlertController-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AKAlertController/AKAlertController.modulemap";
-				PRODUCT_MODULE_NAME = AKAlertController;
-				PRODUCT_NAME = AKAlertController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8BA8036D394B042BAE98A702879D86EB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D3E782A088A06B7684B74D5E03493E6 /* Pods-AKAlertController_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AKAlertController_Tests/Pods-AKAlertController_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AKAlertController_Tests/Pods-AKAlertController_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B0087CB4594321EF41619F3181FE120E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -681,7 +562,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -694,11 +575,108 @@
 			};
 			name = Debug;
 		};
-		BB3A3ACF55FB7DC4519915AA5FC4E20F /* Debug */ = {
+		1CF32791BEF019B3E2878F99258DD8FE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D04928EE4BA1A1076B6ADF8F04A171B /* Pods-AKAlertController_Example.debug.xcconfig */;
+			baseConfigurationReference = AA4692E9681535B3CB56707D8550B05E /* AKAlertController.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AKAlertController/AKAlertController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AKAlertController/AKAlertController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AKAlertController/AKAlertController.modulemap";
+				PRODUCT_MODULE_NAME = AKAlertController;
+				PRODUCT_NAME = AKAlertController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3633641A82CEA53B59252C68CE06140D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C817937C8B72D0ADCFC43444C34E7101 /* AKAlertController.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AKAlertController/AKAlertController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AKAlertController/AKAlertController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AKAlertController/AKAlertController.modulemap";
+				PRODUCT_MODULE_NAME = AKAlertController;
+				PRODUCT_NAME = AKAlertController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		44812A65E1C31DFEF8C1839C4ED167BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5E27C1634FB36D16B17E42A64881B91 /* TinyConstraints.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TinyConstraints/TinyConstraints-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TinyConstraints/TinyConstraints-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TinyConstraints/TinyConstraints.modulemap";
+				PRODUCT_MODULE_NAME = TinyConstraints;
+				PRODUCT_NAME = TinyConstraints;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5628308B6D42AEA0190C667C3A78170E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB85D18E365174A2139C83F73EB2832C /* Pods-AKAlertController_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -710,7 +688,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-AKAlertController_Example/Pods-AKAlertController_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-AKAlertController_Example/Pods-AKAlertController_Example.modulemap";
@@ -727,41 +705,136 @@
 			};
 			name = Debug;
 		};
+		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		EEBB5EEB737E114B2DE837F8F84ADD2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E9F1234FE86C30AA1E70F666BF4903C /* Pods-AKAlertController_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AKAlertController_Example/Pods-AKAlertController_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AKAlertController_Example/Pods-AKAlertController_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0F3AFAAA2F61B5F6FFB6EFF901BC2508 /* Build configuration list for PBXNativeTarget "Pods-AKAlertController_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5628308B6D42AEA0190C667C3A78170E /* Debug */,
+				EEBB5EEB737E114B2DE837F8F84ADD2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
-				B0087CB4594321EF41619F3181FE120E /* Release */,
+				196DFA3E4A09A28224918543529A1885 /* Debug */,
+				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8832B35CBAA33FEFE76282315762DD08 /* Build configuration list for PBXNativeTarget "Pods-AKAlertController_Example" */ = {
+		671E2DE87EED13410ACA209CDD0B5F59 /* Build configuration list for PBXNativeTarget "TinyConstraints" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BB3A3ACF55FB7DC4519915AA5FC4E20F /* Debug */,
-				06FDBFF63F7C75BC68B0CB0585CFED1B /* Release */,
+				44812A65E1C31DFEF8C1839C4ED167BF /* Debug */,
+				027C1041F61E6598931FDB920CD9C4BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DB852CD8ADD88BFDFF1958B58D35CF00 /* Build configuration list for PBXNativeTarget "Pods-AKAlertController_Tests" */ = {
+		BB16D35FAD62DDC71C421680D85E3DFF /* Build configuration list for PBXNativeTarget "AKAlertController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				42DAB1173DFFE296C7C5C384B8108288 /* Debug */,
-				8BA8036D394B042BAE98A702879D86EB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F19A53FBD2CF45A0F9EF8883A32E7956 /* Build configuration list for PBXNativeTarget "AKAlertController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6BF23714EC538DD1C9BF70F28F3AF343 /* Debug */,
-				168513CC14DF08AE199BB1D51EBB5D9A /* Release */,
+				1CF32791BEF019B3E2878F99258DD8FE /* Debug */,
+				3633641A82CEA53B59252C68CE06140D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
