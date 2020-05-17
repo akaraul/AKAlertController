@@ -176,9 +176,9 @@ open class AKAlertController: UIViewController {
         guard let keyboardRect = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else{
             return
         }
-        //TODO: improve this
+        //TODO: improve this (need correct offset)
         if notification.name == UIResponder.keyboardWillShowNotification  {
-            view.frame.origin.y = -keyboardRect.height
+            view.frame.origin.y = -keyboardRect.height / 2
         } else{
             view.frame.origin.y = 0
         }
