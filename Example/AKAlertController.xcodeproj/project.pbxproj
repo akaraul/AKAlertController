@@ -12,14 +12,13 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		91A9FA007597F633FE1BA301 /* Pods_AKAlertController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D3A7B0035E1528F65831BB /* Pods_AKAlertController_Example.framework */; };
+		F5EF5748F709C7B5DB388787 /* Pods_AKAlertController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CA047461FF1F666BD705F78 /* Pods_AKAlertController_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07AB51B28A6E6336C6B99ED7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		082FCC6817BA3614E24942D1 /* Pods-AKAlertController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKAlertController_Example.debug.xcconfig"; path = "Target Support Files/Pods-AKAlertController_Example/Pods-AKAlertController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		0CA047461FF1F666BD705F78 /* Pods_AKAlertController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AKAlertController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		369313BE37B4C05332E505B8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		5152C5BFD62A7BD3E0BCE4A2 /* Pods-AKAlertController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKAlertController_Example.release.xcconfig"; path = "Target Support Files/Pods-AKAlertController_Example/Pods-AKAlertController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* AKAlertController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AKAlertController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -27,8 +26,9 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		703345E2F55140B5BE69C823 /* Pods-AKAlertController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKAlertController_Example.debug.xcconfig"; path = "Target Support Files/Pods-AKAlertController_Example/Pods-AKAlertController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8B69C6439178B000C466E862 /* AKAlertController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AKAlertController.podspec; path = ../AKAlertController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B2D3A7B0035E1528F65831BB /* Pods_AKAlertController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AKAlertController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD20D6241E7ED4A4442E1520 /* Pods-AKAlertController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKAlertController_Example.release.xcconfig"; path = "Target Support Files/Pods-AKAlertController_Example/Pods-AKAlertController_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91A9FA007597F633FE1BA301 /* Pods_AKAlertController_Example.framework in Frameworks */,
+				F5EF5748F709C7B5DB388787 /* Pods_AKAlertController_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,8 +46,8 @@
 		24D9CCCF050A302F790D9722 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				082FCC6817BA3614E24942D1 /* Pods-AKAlertController_Example.debug.xcconfig */,
-				5152C5BFD62A7BD3E0BCE4A2 /* Pods-AKAlertController_Example.release.xcconfig */,
+				703345E2F55140B5BE69C823 /* Pods-AKAlertController_Example.debug.xcconfig */,
+				BD20D6241E7ED4A4442E1520 /* Pods-AKAlertController_Example.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -59,7 +59,7 @@
 				607FACD21AFB9204008FA782 /* Example for AKAlertController */,
 				607FACD11AFB9204008FA782 /* Products */,
 				24D9CCCF050A302F790D9722 /* Pods */,
-				864897B14C22CB631F7D508E /* Frameworks */,
+				9F9DD217CC522F630442250D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,10 +103,10 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		864897B14C22CB631F7D508E /* Frameworks */ = {
+		9F9DD217CC522F630442250D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B2D3A7B0035E1528F65831BB /* Pods_AKAlertController_Example.framework */,
+				0CA047461FF1F666BD705F78 /* Pods_AKAlertController_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,11 +118,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AKAlertController_Example" */;
 			buildPhases = (
-				C0379AD2EB9A917E43F6E615 /* [CP] Check Pods Manifest.lock */,
+				8F7F0E20C95C09AA385A08C3 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				B731E92DBFBF461D7187C458 /* [CP] Embed Pods Frameworks */,
+				608D322BA38C4507E056073B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,7 +182,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B731E92DBFBF461D7187C458 /* [CP] Embed Pods Frameworks */ = {
+		608D322BA38C4507E056073B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -202,7 +202,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AKAlertController_Example/Pods-AKAlertController_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C0379AD2EB9A917E43F6E615 /* [CP] Check Pods Manifest.lock */ = {
+		8F7F0E20C95C09AA385A08C3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -365,7 +365,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 082FCC6817BA3614E24942D1 /* Pods-AKAlertController_Example.debug.xcconfig */;
+			baseConfigurationReference = 703345E2F55140B5BE69C823 /* Pods-AKAlertController_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AKAlertController/Info.plist;
@@ -375,12 +375,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5152C5BFD62A7BD3E0BCE4A2 /* Pods-AKAlertController_Example.release.xcconfig */;
+			baseConfigurationReference = BD20D6241E7ED4A4442E1520 /* Pods-AKAlertController_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AKAlertController/Info.plist;
@@ -390,6 +391,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

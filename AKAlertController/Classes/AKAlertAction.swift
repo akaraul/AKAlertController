@@ -16,6 +16,7 @@ public enum AKAlertActionStyle: Int {
 }
 
 open class AKAlertAction {
+    
     open var title: String
     open var style: AKAlertActionStyle
     open var bgColor: UIColor?
