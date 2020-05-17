@@ -142,6 +142,8 @@ open class AKAlertController: UIViewController {
             button.tag = index
             button.titleLabel?.adjustsFontSizeToFitWidth = true
             button.titleLabel?.minimumScaleFactor = 0.5
+            button.contentEdgeInsets = appearance.buttonsContentEdgeInsets
+            button.imageEdgeInsets = appearance.buttonsImageEdgeInsets
             button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
             button.setTitle(action.title, for: .normal)
             button.setImage(action.icon, for: .normal)
