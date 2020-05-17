@@ -125,12 +125,13 @@ open class AKAlertController: UIViewController {
         }
         if hasText {
             mainContentContainer.stackView.addArrangedSubview(textScrollableContainer)
+            let textLabels = [titleLabel, messageLabel].filter({ $0.text != nil })
+            textLabels.forEach({ textScrollableContainer.stackView.addArrangedSubview($0) })
         }
         if isAlert && textFields.isEmpty == false {
             mainContentContainer.stackView.addArrangedSubview(textFieldsContainer)
         }
         mainContentContainer.stackView.addArrangedSubview(buttonsContainerView)
-        [titleLabel, messageLabel].forEach({ textScrollableContainer.stackView.addArrangedSubview($0) })
         layouActionsButtons()
     }
     
