@@ -3,7 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,34 +20,48 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9nk-t7-8dv">
-                                <rect key="frame" x="64.5" y="258.5" width="246" height="150"/>
+                                <rect key="frame" x="38" y="218.5" width="299" height="230"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQB-s0-ydK">
-                                        <rect key="frame" x="0.0" y="0.0" width="246" height="30"/>
-                                        <state key="normal" title="Show alert"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="299" height="30"/>
+                                        <state key="normal" title="Show default alert"/>
                                         <connections>
                                             <action selector="showAlert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sxE-Ax-pCl"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4U-Uf-glP">
-                                        <rect key="frame" x="0.0" y="40" width="246" height="30"/>
-                                        <state key="normal" title="Show action sheet"/>
+                                        <rect key="frame" x="0.0" y="40" width="299" height="30"/>
+                                        <state key="normal" title="Show default action sheet"/>
                                         <connections>
                                             <action selector="showActionSheet:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KoB-FH-3Fe"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVM-Aq-hnz">
-                                        <rect key="frame" x="0.0" y="80" width="246" height="30"/>
-                                        <state key="normal" title="Show alert full text"/>
+                                        <rect key="frame" x="0.0" y="80" width="299" height="30"/>
+                                        <state key="normal" title="Show alert with long text"/>
                                         <connections>
                                             <action selector="showAlertFullText:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vQk-1o-KAs"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4w-6X-fan">
-                                        <rect key="frame" x="0.0" y="120" width="246" height="30"/>
+                                        <rect key="frame" x="0.0" y="120" width="299" height="30"/>
                                         <state key="normal" title="Show alert with custom appearance"/>
                                         <connections>
                                             <action selector="showAlertWithCustomAppearance:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UqD-HT-XR8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ykg-8T-paW">
+                                        <rect key="frame" x="0.0" y="160" width="299" height="30"/>
+                                        <state key="normal" title="Show action sheet with custom appearance"/>
+                                        <connections>
+                                            <action selector="showActionSheetWithCustomApperance:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3Zf-bS-1TK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXv-lH-rSr">
+                                        <rect key="frame" x="0.0" y="200" width="299" height="30"/>
+                                        <state key="normal" title="Show alert with text fields"/>
+                                        <connections>
+                                            <action selector="showAlertWithTextFields:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3fn-Jb-PoB"/>
                                         </connections>
                                     </button>
                                 </subviews>
