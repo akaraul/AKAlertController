@@ -1,12 +1,12 @@
 # AKAlertController
 
-Simple Alert View written in Swift, which can be used as a UIAlertController replacement.  
-It supports from iOS 10! It is simple and easily customizable!
-
 [![CI Status](https://img.shields.io/travis/akaraul/AKAlertController.svg?style=flat)](https://travis-ci.org/akaraul/AKAlertController)
 [![Version](https://img.shields.io/cocoapods/v/AKAlertController.svg?style=flat)](https://cocoapods.org/pods/AKAlertController)
 [![License](https://img.shields.io/cocoapods/l/AKAlertController.svg?style=flat)](https://cocoapods.org/pods/AKAlertController)
 [![Platform](https://img.shields.io/cocoapods/p/AKAlertController.svg?style=flat)](https://cocoapods.org/pods/AKAlertController)
+
+Simple Alert View written in Swift, which can be used as a UIAlertController replacement.  
+It supports from iOS 10! It is simple and easily customizable!
 
 ## Example
 
