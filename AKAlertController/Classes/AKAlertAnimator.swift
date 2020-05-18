@@ -29,7 +29,7 @@ class AKAlertAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         }
     }
     
-    func presentAnimateTransition(_ transitionContext: UIViewControllerContextTransitioning) {
+    private func presentAnimateTransition(_ transitionContext: UIViewControllerContextTransitioning) {
         let alertController = transitionContext.viewController(forKey: .to) as! AKAlertController
         let containerView = transitionContext.containerView
         let duration = transitionDuration(using: transitionContext)
@@ -45,12 +45,12 @@ class AKAlertAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         UIView.animate(withDuration: duration, animations: {
             alertController.view.alpha = 1.0
             alertController.containerView.transform = .identity
-        }, completion: { finished in
-            transitionContext.completeTransition(finished)
+        }, completion: { _ in
+            transitionContext.completeTransition(true)
         })
     }
     
-    func dismissAnimateTransition(_ transitionContext: UIViewControllerContextTransitioning) {
+    private func dismissAnimateTransition(_ transitionContext: UIViewControllerContextTransitioning) {
         let alertController = transitionContext.viewController(forKey: .from) as! AKAlertController
         UIView.animate(withDuration: transitionDuration(using: transitionContext), animations: {
             alertController.overlayView.alpha = 0.0
@@ -59,8 +59,8 @@ class AKAlertAnimator: NSObject, UIViewControllerAnimatedTransitioning {
             } else {
                 alertController.containerView.transform = CGAffineTransform(translationX: 0, y: alertController.containerView.frame.height * 1.3)
             }
-        }, completion: { finished in
-            transitionContext.completeTransition(finished)
+        }, completion: { _ in
+            transitionContext.completeTransition(true)
         })
     }
     

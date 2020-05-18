@@ -181,8 +181,7 @@ open class AKAlertController: UIViewController {
     
     @objc private func buttonTapped(_ sender: UIButton) {
         let action = actions[sender.tag]
-        action.handler?(action)
-        dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: { action.handler?(action) })
     }
     
     @objc private func handleKeyboardNotification(_ notification: Notification) {
