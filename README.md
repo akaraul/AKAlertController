@@ -53,6 +53,7 @@ AKAlertControlle completely repeats the system UIAlertController interface, but 
 * Fonts (Text, Buttons)
 * Colors (Overlay, Views, Text, Buttons)
 * Sizes
+* It is possible to add an image
 
 ![BackgroundImage](../master/Screenshots/customactionsheet.png)
 ![BackgroundImage](../master/Screenshots/customalert.png)
@@ -77,6 +78,17 @@ cancelAction.icon = UIImage(named: "close")
 alertController.addAction(cancelAction)
 ...
 ``` 
+#### Example with image
+```swift
+let alertController = AKAlertController(title: "Title label", message: "Message label", headerImage: UIImage(named: "close"), preferredStyle: .alert)
+let handler: (AKAlertAction) -> Void = { action in print("\(action.title) pressed" )}
+alertController.addAction(AKAlertAction(title: "Default action", style: .default, handler: handler))
+alertController.addAction(AKAlertAction(title: "Cancel action", style: .cancel, handler: handler))
+alertController.addAction(AKAlertAction(title: "Destructive action", style: .destructive, handler: handler))
+present(alertController, animated: true, completion: nil)
+``` 
+![BackgroundImage](../master/Screenshots/alertimage.png)
+![BackgroundImage](../master/Screenshots/sheetimage.png)
 
 ## Example
 
