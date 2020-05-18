@@ -19,6 +19,13 @@ public struct AKAlertControllerAppearance {
     public var actionSheetWidthMultiplier: CGFloat = 0.95
     /// The color of the container background (may not be noticeable when changing, since there are many other containers on top of it)
     public var alertContainerBgColor: UIColor = UIColor.systemWhiteColor
+    /// The color of the main content container background (may not be noticeable when changing, since there are many other containers on top of it)
+    public var mainContentContainerBgColor: UIColor = UIColor.systemWhiteColor
+    
+    /// Header image top offset
+    public var headerImageTopOffset: CGFloat = 15
+    /// Header image max height
+    public var headerMaxHeight: CGFloat?
     
     /// Overlay background color
     public var overlayColor = UIColor.black.withAlphaComponent(0.5)

@@ -31,8 +31,9 @@ open class AKAlertController: UIViewController {
     open fileprivate(set) var isAlert = true
     fileprivate var appearance: AKAlertControllerAppearance!
     fileprivate var hasText = true
+    fileprivate var image: UIImage?
     
-    public convenience init(title: String?, message: String?,
+    public convenience init(title: String?, message: String?, headerImage: UIImage? = nil,
                             preferredStyle: AKAlertControllerStyle,
                             appearance: AKAlertControllerAppearance = AKAlertControllerAppearance.defaultAppearance()) {
         self.init()
@@ -42,6 +43,7 @@ open class AKAlertController: UIViewController {
         self.messageLabel.text = message
         self.hasText = title != nil || message != nil
         self.isAlert = preferredStyle == .alert
+        self.image = headerImage
         
         self.modalPresentationStyle = .custom
         self.transitioningDelegate = self
@@ -91,12 +93,16 @@ open class AKAlertController: UIViewController {
         
         overlayView.backgroundColor = appearance.overlayColor
         containerView.backgroundColor = isAlert ? appearance.alertContainerBgColor : .clear
+        mainContentContainer.backgroundColor = appearance.mainContentContainerBgColor
         [containerView.layer, mainContentContainer.layer].forEach({ $0.cornerRadius = appearance.alertCornerRadius })
         
         textScrollableContainer.backgroundColor = appearance.textContainerBgColor
         textScrollableContainer.stackView.isLayoutMarginsRelativeArrangement = hasText
         textScrollableContainer.stackView.layoutMargins = appearance.textMargins
         textScrollableContainer.stackView.spacing = hasText ? appearance.titleBottomOffset : 0
+        
+        mainContentContainer.stackView.isLayoutMarginsRelativeArrangement = image != nil
+        mainContentContainer.stackView.layoutMargins = .top(appearance.headerImageTopOffset)
         
         textFieldsContainer.backgroundColor = appearance.textFieldsContainerBgColor
         textFieldsContainer.stackView.isLayoutMarginsRelativeArrangement = hasText
@@ -114,6 +120,12 @@ open class AKAlertController: UIViewController {
         overlayView.edgesToSuperview()
         containerView.heightToSuperview(multiplier: 0.95, relation: .equalOrLess, usingSafeArea: true)
         containerView.stackView.addArrangedSubview(mainContentContainer)
+        if let headerImage = image {
+            let imgView = UIImageView(image: headerImage)
+            imgView.contentMode = .scaleAspectFit
+            imgView.height(max: appearance.headerMaxHeight)
+            mainContentContainer.stackView.addArrangedSubview(imgView)
+        }
         if isAlert {
             containerView.width(appearance.alertViewWidth)
             containerView.centerInSuperview()
