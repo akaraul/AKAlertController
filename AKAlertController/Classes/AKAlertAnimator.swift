@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-open class AKAlertAnimator: NSObject, UIViewControllerAnimatedTransitioning {
+class AKAlertAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     
     private let isPresenting: Bool
     

@@ -17,13 +17,18 @@ public enum AKAlertActionStyle: Int {
 
 open class AKAlertAction {
     
-    open var title: String
-    open var style: AKAlertActionStyle
+    public let title: String
+    public let style: AKAlertActionStyle
+    public let handler: ((AKAlertAction) -> Void)?
+    
+    /// Background color for this action button only (regardless of general settings)
     open var bgColor: UIColor?
+    /// Text color for this action button only (regardless of general settings)
     open var textColor: UIColor?
+    /// Font for this action button only (regardless of general settings)
     open var font: UIFont?
+    /// Image for action
     open var icon: UIImage?
-    var handler: ((AKAlertAction) -> Void)?
     
     required public init(title: String, style: AKAlertActionStyle, handler: ((AKAlertAction) -> Void)?) {
         self.title = title

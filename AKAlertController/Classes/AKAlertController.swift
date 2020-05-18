@@ -28,10 +28,9 @@ open class AKAlertController: UIViewController {
     
     open fileprivate(set) var actions = [AKAlertAction]()
     open fileprivate(set) var textFields = [UITextField]()
+    open fileprivate(set) var isAlert = true
     fileprivate var appearance: AKAlertControllerAppearance!
     fileprivate var hasText = true
-    
-    var isAlert = true
     
     public convenience init(title: String?, message: String?,
                             preferredStyle: AKAlertControllerStyle,
@@ -91,7 +90,7 @@ open class AKAlertController: UIViewController {
         messageLabel.textColor = appearance.messageTextColor
         
         overlayView.backgroundColor = appearance.overlayColor
-        containerView.backgroundColor = appearance.alertContainerBgColor
+        containerView.backgroundColor = isAlert ? appearance.alertContainerBgColor : .clear
         [containerView.layer, mainContentContainer.layer].forEach({ $0.cornerRadius = appearance.alertCornerRadius })
         
         textScrollableContainer.backgroundColor = appearance.textContainerBgColor
@@ -120,7 +119,7 @@ open class AKAlertController: UIViewController {
             containerView.centerInSuperview()
         } else {
             containerView.centerXToSuperview()
-            containerView.widthToSuperview(multiplier: 0.95, usingSafeArea: true)
+            containerView.widthToSuperview(multiplier: appearance.actionSheetWidthMultiplier, usingSafeArea: true)
             containerView.bottomToSuperview(offset: UIDevice.current.hasNotch ? 0 : -10, usingSafeArea: true)
         }
         if hasText {
@@ -131,8 +130,10 @@ open class AKAlertController: UIViewController {
         if isAlert && textFields.isEmpty == false {
             mainContentContainer.stackView.addArrangedSubview(textFieldsContainer)
         }
-        mainContentContainer.stackView.addArrangedSubview(buttonsContainerView)
-        layouActionsButtons()
+        if actions.isEmpty == false {
+            mainContentContainer.stackView.addArrangedSubview(buttonsContainerView)
+            layouActionsButtons()
+        }
     }
     
     private func layouActionsButtons() {
