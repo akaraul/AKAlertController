@@ -49,9 +49,6 @@ open class AKAlertController: UIViewController {
         self.modalPresentationStyle = .custom
         self.transitioningDelegate = self
         
-        let recognizer = AKAlertUIPanGestureRecognizer(target: self, action: #selector(handlePanGesture))
-        containerView.addGestureRecognizer(recognizer)
-        
         NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardNotification), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardNotification), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
@@ -66,6 +63,9 @@ open class AKAlertController: UIViewController {
         super.viewDidLoad()
         layout()
         setupApperance()
+        let recognizer = UILongPressGestureRecognizer(target: self, action: #selector(handlePanGesture))
+        recognizer.minimumPressDuration = 0
+        containerView.addGestureRecognizer(recognizer)
     }
     
     open override func viewWillAppear(_ animated: Bool) {
@@ -175,7 +175,7 @@ open class AKAlertController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    @objc private func handlePanGesture(_ sender: AKAlertUIPanGestureRecognizer) {
+    @objc private func handlePanGesture(_ sender: UILongPressGestureRecognizer) {
         let point = sender.location(in: containerView)
         var selectedTag: Int?
         for button in actionButtons {

@@ -7,16 +7,6 @@
 
 import Foundation
 
-class AKAlertUIPanGestureRecognizer: UIPanGestureRecognizer {
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent) {
-        guard state != .began else { return }
-        super.touchesBegan(touches, with: event)
-        state = .began
-    }
-    
-}
-
 class HorizontalScrollableStackWithBackgroundView: UIScrollView {
     
     let stackView = UIStackView()
