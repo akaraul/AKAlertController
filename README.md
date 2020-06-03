@@ -104,7 +104,7 @@ AKAlertController is available through [CocoaPods](https://cocoapods.org). To in
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'AKAlertController', '~> 1.1.0'
+pod 'AKAlertController', '~> 1.1.1'
 ```
 
 ## License
