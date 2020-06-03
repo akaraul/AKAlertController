@@ -85,6 +85,8 @@ public struct AKAlertControllerAppearance {
         .cancel: UIColor.systemWhiteColor,
         .destructive: UIColor.systemWhiteColor
     ]
+    /// Highlighted background color used for all buttons
+    public var highlightedButtonsBgColor: UIColor?
     
     /// Build default AKAlertControllerAppearance
     public static func defaultAppearance() -> AKAlertControllerAppearance {

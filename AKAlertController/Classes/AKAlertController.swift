@@ -29,6 +29,7 @@ open class AKAlertController: UIViewController {
     open fileprivate(set) var actions = [AKAlertAction]()
     open fileprivate(set) var textFields = [UITextField]()
     open fileprivate(set) var isAlert = true
+    fileprivate var actionButtons = [AKAlertActionButton]()
     fileprivate var appearance: AKAlertControllerAppearance!
     fileprivate var hasText = true
     fileprivate var image: UIImage?
@@ -47,6 +48,9 @@ open class AKAlertController: UIViewController {
         
         self.modalPresentationStyle = .custom
         self.transitioningDelegate = self
+        
+        let recognizer = AKAlertUIPanGestureRecognizer(target: self, action: #selector(handlePanGesture))
+        containerView.addGestureRecognizer(recognizer)
         
         NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardNotification), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardNotification), name: UIResponder.keyboardWillHideNotification, object: nil)
@@ -151,18 +155,9 @@ open class AKAlertController: UIViewController {
     private func layouActionsButtons() {
         actions.sort {$0.style.rawValue < $1.style.rawValue}
         for (index, action) in actions.enumerated() {
-            let button = UIButton()
+            let button = AKAlertActionButton()
             button.tag = index
-            button.titleLabel?.adjustsFontSizeToFitWidth = true
-            button.titleLabel?.minimumScaleFactor = 0.5
-            button.contentEdgeInsets = appearance.buttonsContentEdgeInsets
-            button.imageEdgeInsets = appearance.buttonsImageEdgeInsets
-            button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
-            button.setTitle(action.title, for: .normal)
-            button.setImage(action.icon, for: .normal)
-            button.titleLabel?.font = action.font ?? appearance.buttonFont[action.style]
-            button.setTitleColor(action.textColor ?? appearance.buttonTextColor[action.style], for: .normal)
-            button.backgroundColor = action.bgColor ?? appearance.buttonBgColor[action.style]
+            button.setupForAction(action, withAppearance: appearance)
             button.height(isAlert ? appearance.alertButtonsHeight : appearance.actionSheetButtonsHeight)
             if !isAlert && action.style == .cancel {
                 button.layer.cornerRadius = appearance.alertCornerRadius
@@ -170,6 +165,7 @@ open class AKAlertController: UIViewController {
             } else {
                 buttonsContainerView.stackView.addArrangedSubview(button)
             }
+            actionButtons.append(button)
         }
     }
     
@@ -179,8 +175,19 @@ open class AKAlertController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    @objc private func buttonTapped(_ sender: UIButton) {
-        let action = actions[sender.tag]
+    @objc private func handlePanGesture(_ sender: AKAlertUIPanGestureRecognizer) {
+        let point = sender.location(in: containerView)
+        var selectedTag: Int?
+        for button in actionButtons {
+            let buttonFrame = button.convert(button.bounds, to: containerView)
+            let isHighlighted = buttonFrame.contains(point)
+            button.isHighlightedState = isHighlighted
+            guard isHighlighted else { continue }
+            selectedTag = button.tag
+        }
+        guard sender.state == .ended, let tag = selectedTag else { return }
+        
+        let action = actions[tag]
         dismiss(animated: true, completion: { action.handler?(action) })
     }
     
