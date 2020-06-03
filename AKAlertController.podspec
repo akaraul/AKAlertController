@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AKAlertController'
-  s.version          = '1.1.0'
+  s.version          = '1.1.1'
   s.swift_versions   = [5.0]
   s.summary          = 'Simple fully customizable UIAlertController written in Swift.'
 
